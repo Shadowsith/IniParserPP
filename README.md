@@ -6,7 +6,7 @@ with help of std::map
 
 ## Motiviaton
 This project was highly inspired from the C#
-[https://github.com/rickyah/ini-parser](ini-parser) by rickyah.
+[ini-parser](https://github.com/rickyah/ini-parser) by rickyah.
 
 ## Usage
 ```ini
