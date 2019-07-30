@@ -1,6 +1,8 @@
+[![Build status](https://ci.appveyor.com/api/projects/status/v7y5q5a0q45w1ib7?svg=true)](https://ci.appveyor.com/project/Shadowsith/iniparserpp)
 # IniParser
 A small, modern C++11 header only library for read, write and modify .INI configuration files
 with help of std::map
+
 
 ## Motiviaton
 This project was highly inspired from the C#
