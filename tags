@@ -1,0 +1,427 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_OUTPUT_MODE	u-ctags	/u-ctags or e-ctags/
+!_TAG_PROGRAM_AUTHOR	Universal Ctags Team	//
+!_TAG_PROGRAM_NAME	Universal Ctags	/Derived from Exuberant Ctags/
+!_TAG_PROGRAM_URL	https://ctags.io/	/official site/
+!_TAG_PROGRAM_VERSION	0.0.0	/3fdf28bc/
+Access	test/root.ini	/^Access=ReadWrite$/;"	k	section:Settings
+AssertionInfo	test/catch.hpp	/^    struct AssertionInfo$/;"	s	namespace:Catch
+AutoReg	test/catch.hpp	/^struct AutoReg : NonCopyable {$/;"	s	namespace:Catch
+CATCH_ARC_ENABLED	test/catch.hpp	/^#define CATCH_ARC_ENABLED /;"	d
+CATCH_ARC_STRONG	test/catch.hpp	/^#define CATCH_ARC_STRONG /;"	d
+CATCH_ARC_STRONG	test/catch.hpp	/^#define CATCH_ARC_STRONG$/;"	d
+CATCH_CATCH_ALL	test/catch.hpp	/^#define CATCH_CATCH_ALL /;"	d
+CATCH_CATCH_ANON	test/catch.hpp	/^#define CATCH_CATCH_ANON(/;"	d
+CATCH_CONFIG_ALL_PARTS	test/catch.hpp	/^#  define CATCH_CONFIG_ALL_PARTS$/;"	d
+CATCH_CONFIG_COLOUR_NONE	test/catch.hpp	/^#       define CATCH_CONFIG_COLOUR_NONE$/;"	d
+CATCH_CONFIG_COLOUR_NONE	test/catch.hpp	/^#    define CATCH_CONFIG_COLOUR_NONE$/;"	d
+CATCH_CONFIG_COUNTER	test/catch.hpp	/^#   define CATCH_CONFIG_COUNTER$/;"	d
+CATCH_CONFIG_CPP11_TO_STRING	test/catch.hpp	/^#    define CATCH_CONFIG_CPP11_TO_STRING$/;"	d
+CATCH_CONFIG_CPP17_OPTIONAL	test/catch.hpp	/^#  define CATCH_CONFIG_CPP17_OPTIONAL$/;"	d
+CATCH_CONFIG_CPP17_STRING_VIEW	test/catch.hpp	/^#  define CATCH_CONFIG_CPP17_STRING_VIEW$/;"	d
+CATCH_CONFIG_CPP17_UNCAUGHT_EXCEPTIONS	test/catch.hpp	/^#  define CATCH_CONFIG_CPP17_UNCAUGHT_EXCEPTIONS$/;"	d
+CATCH_CONFIG_CPP17_VARIANT	test/catch.hpp	/^#  define CATCH_CONFIG_CPP17_VARIANT$/;"	d
+CATCH_CONFIG_DISABLE_EXCEPTIONS	test/catch.hpp	/^#  define CATCH_CONFIG_DISABLE_EXCEPTIONS$/;"	d
+CATCH_CONFIG_ENABLE_CHRONO_STRINGMAKER	test/catch.hpp	/^#    define CATCH_CONFIG_ENABLE_CHRONO_STRINGMAKER$/;"	d
+CATCH_CONFIG_ENABLE_CHRONO_STRINGMAKER	test/catch.hpp	/^#  define CATCH_CONFIG_ENABLE_CHRONO_STRINGMAKER$/;"	d
+CATCH_CONFIG_ENABLE_OPTIONAL_STRINGMAKER	test/catch.hpp	/^#  define CATCH_CONFIG_ENABLE_OPTIONAL_STRINGMAKER$/;"	d
+CATCH_CONFIG_ENABLE_PAIR_STRINGMAKER	test/catch.hpp	/^#  define CATCH_CONFIG_ENABLE_PAIR_STRINGMAKER$/;"	d
+CATCH_CONFIG_ENABLE_TUPLE_STRINGMAKER	test/catch.hpp	/^#  define CATCH_CONFIG_ENABLE_TUPLE_STRINGMAKER$/;"	d
+CATCH_CONFIG_ENABLE_VARIANT_STRINGMAKER	test/catch.hpp	/^#  define CATCH_CONFIG_ENABLE_VARIANT_STRINGMAKER$/;"	d
+CATCH_CONFIG_EXTERNAL_INTERFACES	test/catch.hpp	/^#  define CATCH_CONFIG_EXTERNAL_INTERFACES$/;"	d
+CATCH_CONFIG_MAIN	test/unit.cpp	/^#define CATCH_CONFIG_MAIN /;"	d	file:
+CATCH_CONFIG_NEW_CAPTURE	test/catch.hpp	/^#  define CATCH_CONFIG_NEW_CAPTURE$/;"	d
+CATCH_CONFIG_NO_CPP17_VARIANT	test/catch.hpp	/^#        define CATCH_CONFIG_NO_CPP17_VARIANT$/;"	d
+CATCH_CONFIG_POLYFILL_ISNAN	test/catch.hpp	/^#  define CATCH_CONFIG_POLYFILL_ISNAN$/;"	d
+CATCH_CONFIG_POSIX_SIGNALS	test/catch.hpp	/^#   define CATCH_CONFIG_POSIX_SIGNALS$/;"	d
+CATCH_CONFIG_TRADITIONAL_MSVC_PREPROCESSOR	test/catch.hpp	/^#define CATCH_CONFIG_TRADITIONAL_MSVC_PREPROCESSOR$/;"	d
+CATCH_CONFIG_USE_ASYNC	test/catch.hpp	/^#  define CATCH_CONFIG_USE_ASYNC$/;"	d
+CATCH_CONFIG_WCHAR	test/catch.hpp	/^#   define CATCH_CONFIG_WCHAR$/;"	d
+CATCH_CONFIG_WINDOWS_SEH	test/catch.hpp	/^#   define CATCH_CONFIG_WINDOWS_SEH$/;"	d
+CATCH_CPP14_OR_GREATER	test/catch.hpp	/^#    define CATCH_CPP14_OR_GREATER$/;"	d
+CATCH_CPP17_OR_GREATER	test/catch.hpp	/^#    define CATCH_CPP17_OR_GREATER$/;"	d
+CATCH_DEFER	test/catch.hpp	/^#define CATCH_DEFER(/;"	d
+CATCH_EMPTY	test/catch.hpp	/^#define CATCH_EMPTY(/;"	d
+CATCH_IMPL	test/catch.hpp	/^#  define CATCH_IMPL$/;"	d
+CATCH_INTERNAL_CONFIG_COUNTER	test/catch.hpp	/^    #define CATCH_INTERNAL_CONFIG_COUNTER$/;"	d
+CATCH_INTERNAL_CONFIG_CPP17_OPTIONAL	test/catch.hpp	/^#    define CATCH_INTERNAL_CONFIG_CPP17_OPTIONAL$/;"	d
+CATCH_INTERNAL_CONFIG_CPP17_STRING_VIEW	test/catch.hpp	/^#    define CATCH_INTERNAL_CONFIG_CPP17_STRING_VIEW$/;"	d
+CATCH_INTERNAL_CONFIG_CPP17_UNCAUGHT_EXCEPTIONS	test/catch.hpp	/^#    define CATCH_INTERNAL_CONFIG_CPP17_UNCAUGHT_EXCEPTIONS$/;"	d
+CATCH_INTERNAL_CONFIG_CPP17_UNCAUGHT_EXCEPTIONS	test/catch.hpp	/^#  define CATCH_INTERNAL_CONFIG_CPP17_UNCAUGHT_EXCEPTIONS$/;"	d
+CATCH_INTERNAL_CONFIG_CPP17_VARIANT	test/catch.hpp	/^#        define CATCH_INTERNAL_CONFIG_CPP17_VARIANT$/;"	d
+CATCH_INTERNAL_CONFIG_CPP17_VARIANT	test/catch.hpp	/^#      define CATCH_INTERNAL_CONFIG_CPP17_VARIANT$/;"	d
+CATCH_INTERNAL_CONFIG_EXCEPTIONS_ENABLED	test/catch.hpp	/^#  define CATCH_INTERNAL_CONFIG_EXCEPTIONS_ENABLED$/;"	d
+CATCH_INTERNAL_CONFIG_NEW_CAPTURE	test/catch.hpp	/^#  define CATCH_INTERNAL_CONFIG_NEW_CAPTURE$/;"	d
+CATCH_INTERNAL_CONFIG_NO_CPP11_TO_STRING	test/catch.hpp	/^#    define CATCH_INTERNAL_CONFIG_NO_CPP11_TO_STRING$/;"	d
+CATCH_INTERNAL_CONFIG_NO_NEW_CAPTURE	test/catch.hpp	/^#    define CATCH_INTERNAL_CONFIG_NO_NEW_CAPTURE$/;"	d
+CATCH_INTERNAL_CONFIG_NO_POSIX_SIGNALS	test/catch.hpp	/^    #define CATCH_INTERNAL_CONFIG_NO_POSIX_SIGNALS$/;"	d
+CATCH_INTERNAL_CONFIG_NO_POSIX_SIGNALS	test/catch.hpp	/^#       define CATCH_INTERNAL_CONFIG_NO_POSIX_SIGNALS$/;"	d
+CATCH_INTERNAL_CONFIG_NO_WCHAR	test/catch.hpp	/^#  define CATCH_INTERNAL_CONFIG_NO_WCHAR$/;"	d
+CATCH_INTERNAL_CONFIG_NO_WINDOWS_SEH	test/catch.hpp	/^#    define CATCH_INTERNAL_CONFIG_NO_WINDOWS_SEH$/;"	d
+CATCH_INTERNAL_CONFIG_POLYFILL_ISNAN	test/catch.hpp	/^    #define CATCH_INTERNAL_CONFIG_POLYFILL_ISNAN$/;"	d
+CATCH_INTERNAL_CONFIG_POSIX_SIGNALS	test/catch.hpp	/^    #define CATCH_INTERNAL_CONFIG_POSIX_SIGNALS$/;"	d
+CATCH_INTERNAL_CONFIG_TRADITIONAL_MSVC_PREPROCESSOR	test/catch.hpp	/^#    define CATCH_INTERNAL_CONFIG_TRADITIONAL_MSVC_PREPROCESSOR$/;"	d
+CATCH_INTERNAL_CONFIG_USE_ASYNC	test/catch.hpp	/^# define CATCH_INTERNAL_CONFIG_USE_ASYNC$/;"	d
+CATCH_INTERNAL_CONFIG_WINDOWS_SEH	test/catch.hpp	/^#    define CATCH_INTERNAL_CONFIG_WINDOWS_SEH$/;"	d
+CATCH_INTERNAL_LINEINFO	test/catch.hpp	/^#define CATCH_INTERNAL_LINEINFO /;"	d
+CATCH_INTERNAL_SUPPRESS_GLOBALS_WARNINGS	test/catch.hpp	/^#       define CATCH_INTERNAL_SUPPRESS_GLOBALS_WARNINGS /;"	d
+CATCH_INTERNAL_SUPPRESS_GLOBALS_WARNINGS	test/catch.hpp	/^#   define CATCH_INTERNAL_SUPPRESS_GLOBALS_WARNINGS$/;"	d
+CATCH_INTERNAL_SUPPRESS_PARENTHESES_WARNINGS	test/catch.hpp	/^#       define CATCH_INTERNAL_SUPPRESS_PARENTHESES_WARNINGS /;"	d
+CATCH_INTERNAL_SUPPRESS_PARENTHESES_WARNINGS	test/catch.hpp	/^#   define CATCH_INTERNAL_SUPPRESS_PARENTHESES_WARNINGS$/;"	d
+CATCH_INTERNAL_SUPPRESS_UNUSED_WARNINGS	test/catch.hpp	/^#       define CATCH_INTERNAL_SUPPRESS_UNUSED_WARNINGS /;"	d
+CATCH_INTERNAL_SUPPRESS_UNUSED_WARNINGS	test/catch.hpp	/^#   define CATCH_INTERNAL_SUPPRESS_UNUSED_WARNINGS$/;"	d
+CATCH_INTERNAL_SUPPRESS_ZERO_VARIADIC_WARNINGS	test/catch.hpp	/^#       define CATCH_INTERNAL_SUPPRESS_ZERO_VARIADIC_WARNINGS /;"	d
+CATCH_INTERNAL_SUPPRESS_ZERO_VARIADIC_WARNINGS	test/catch.hpp	/^#   define CATCH_INTERNAL_SUPPRESS_ZERO_VARIADIC_WARNINGS$/;"	d
+CATCH_INTERNAL_UNSUPPRESS_GLOBALS_WARNINGS	test/catch.hpp	/^#       define CATCH_INTERNAL_UNSUPPRESS_GLOBALS_WARNINGS /;"	d
+CATCH_INTERNAL_UNSUPPRESS_GLOBALS_WARNINGS	test/catch.hpp	/^#   define CATCH_INTERNAL_UNSUPPRESS_GLOBALS_WARNINGS$/;"	d
+CATCH_INTERNAL_UNSUPPRESS_PARENTHESES_WARNINGS	test/catch.hpp	/^#       define CATCH_INTERNAL_UNSUPPRESS_PARENTHESES_WARNINGS /;"	d
+CATCH_INTERNAL_UNSUPPRESS_PARENTHESES_WARNINGS	test/catch.hpp	/^#   define CATCH_INTERNAL_UNSUPPRESS_PARENTHESES_WARNINGS$/;"	d
+CATCH_INTERNAL_UNSUPPRESS_UNUSED_WARNINGS	test/catch.hpp	/^#       define CATCH_INTERNAL_UNSUPPRESS_UNUSED_WARNINGS /;"	d
+CATCH_INTERNAL_UNSUPPRESS_UNUSED_WARNINGS	test/catch.hpp	/^#   define CATCH_INTERNAL_UNSUPPRESS_UNUSED_WARNINGS$/;"	d
+CATCH_INTERNAL_UNSUPPRESS_ZERO_VARIADIC_WARNINGS	test/catch.hpp	/^#       define CATCH_INTERNAL_UNSUPPRESS_ZERO_VARIADIC_WARNINGS /;"	d
+CATCH_INTERNAL_UNSUPPRESS_ZERO_VARIADIC_WARNINGS	test/catch.hpp	/^#   define CATCH_INTERNAL_UNSUPPRESS_ZERO_VARIADIC_WARNINGS$/;"	d
+CATCH_PLATFORM_IPHONE	test/catch.hpp	/^#  define CATCH_PLATFORM_IPHONE$/;"	d
+CATCH_PLATFORM_LINUX	test/catch.hpp	/^#  define CATCH_PLATFORM_LINUX$/;"	d
+CATCH_PLATFORM_MAC	test/catch.hpp	/^#  define CATCH_PLATFORM_MAC$/;"	d
+CATCH_PLATFORM_WINDOWS	test/catch.hpp	/^#  define CATCH_PLATFORM_WINDOWS$/;"	d
+CATCH_RECURSE	test/catch.hpp	/^#define CATCH_RECURSE(/;"	d
+CATCH_RECURSION_LEVEL0	test/catch.hpp	/^#define CATCH_RECURSION_LEVEL0(/;"	d
+CATCH_RECURSION_LEVEL1	test/catch.hpp	/^#define CATCH_RECURSION_LEVEL1(/;"	d
+CATCH_RECURSION_LEVEL2	test/catch.hpp	/^#define CATCH_RECURSION_LEVEL2(/;"	d
+CATCH_RECURSION_LEVEL3	test/catch.hpp	/^#define CATCH_RECURSION_LEVEL3(/;"	d
+CATCH_RECURSION_LEVEL4	test/catch.hpp	/^#define CATCH_RECURSION_LEVEL4(/;"	d
+CATCH_RECURSION_LEVEL5	test/catch.hpp	/^#define CATCH_RECURSION_LEVEL5(/;"	d
+CATCH_RECURSION_LEVEL6	test/catch.hpp	/^#define CATCH_RECURSION_LEVEL6(/;"	d
+CATCH_REC_END	test/catch.hpp	/^#define CATCH_REC_END(/;"	d
+CATCH_REC_GET_END	test/catch.hpp	/^#define CATCH_REC_GET_END(/;"	d
+CATCH_REC_GET_END1	test/catch.hpp	/^#define CATCH_REC_GET_END1(/;"	d
+CATCH_REC_GET_END2	test/catch.hpp	/^#define CATCH_REC_GET_END2(/;"	d
+CATCH_REC_LIST	test/catch.hpp	/^#define CATCH_REC_LIST(/;"	d
+CATCH_REC_LIST0	test/catch.hpp	/^#define CATCH_REC_LIST0(/;"	d
+CATCH_REC_LIST0_UD	test/catch.hpp	/^#define CATCH_REC_LIST0_UD(/;"	d
+CATCH_REC_LIST1	test/catch.hpp	/^#define CATCH_REC_LIST1(/;"	d
+CATCH_REC_LIST1_UD	test/catch.hpp	/^#define CATCH_REC_LIST1_UD(/;"	d
+CATCH_REC_LIST2	test/catch.hpp	/^#define CATCH_REC_LIST2(/;"	d
+CATCH_REC_LIST2_UD	test/catch.hpp	/^#define CATCH_REC_LIST2_UD(/;"	d
+CATCH_REC_LIST_UD	test/catch.hpp	/^#define CATCH_REC_LIST_UD(/;"	d
+CATCH_REC_NEXT	test/catch.hpp	/^#define CATCH_REC_NEXT(/;"	d
+CATCH_REC_NEXT0	test/catch.hpp	/^#define CATCH_REC_NEXT0(/;"	d
+CATCH_REC_NEXT1	test/catch.hpp	/^#define CATCH_REC_NEXT1(/;"	d
+CATCH_REC_OUT	test/catch.hpp	/^#define CATCH_REC_OUT$/;"	d
+CATCH_REGISTER_TAG_ALIAS	test/catch.hpp	/^#define CATCH_REGISTER_TAG_ALIAS(/;"	d
+CATCH_TRY	test/catch.hpp	/^#define CATCH_TRY /;"	d
+CATCH_UNSAFE_UNRETAINED	test/catch.hpp	/^#define CATCH_UNSAFE_UNRETAINED /;"	d
+CATCH_UNSAFE_UNRETAINED	test/catch.hpp	/^#define CATCH_UNSAFE_UNRETAINED$/;"	d
+CATCH_VERSION_MAJOR	test/catch.hpp	/^#define CATCH_VERSION_MAJOR /;"	d
+CATCH_VERSION_MINOR	test/catch.hpp	/^#define CATCH_VERSION_MINOR /;"	d
+CATCH_VERSION_PATCH	test/catch.hpp	/^#define CATCH_VERSION_PATCH /;"	d
+CLARA_CONFIG_MAIN	test/catch.hpp	/^#    define CLARA_CONFIG_MAIN$/;"	d
+CLARA_CONFIG_MAIN_NOT_DEFINED	test/catch.hpp	/^#    define CLARA_CONFIG_MAIN_NOT_DEFINED$/;"	d
+CaseSensitive	test/catch.hpp	/^    struct CaseSensitive { enum Choice {$/;"	s	namespace:Catch
+Catch	test/catch.hpp	/^namespace Catch {$/;"	n
+Catch	test/catch.hpp	/^namespace Catch{$/;"	n
+Catch_global_namespace_dummy	test/catch.hpp	/^struct Catch_global_namespace_dummy {};$/;"	s
+Choice	test/catch.hpp	/^    struct CaseSensitive { enum Choice {$/;"	g	struct:Catch::CaseSensitive
+ContinueOnFailure	test/catch.hpp	/^        ContinueOnFailure = 0x02,   \/\/ Failures fail test, but execution continues$/;"	e	enum:Catch::ResultDisposition::Flags
+Detail	test/catch.hpp	/^    namespace Detail {$/;"	n	namespace:Catch
+DidntThrowException	test/catch.hpp	/^        DidntThrowException = Exception | 2,$/;"	e	enum:Catch::ResultWas::OfType
+EnumInfo	test/catch.hpp	/^        struct EnumInfo {$/;"	s	namespace:Catch::Detail
+Exception	test/catch.hpp	/^        Exception = 0x100 | FailureBit,$/;"	e	enum:Catch::ResultWas::OfType
+ExplicitFailure	test/catch.hpp	/^        ExplicitFailure = FailureBit | 2,$/;"	e	enum:Catch::ResultWas::OfType
+ExpressionFailed	test/catch.hpp	/^        ExpressionFailed = FailureBit | 1,$/;"	e	enum:Catch::ResultWas::OfType
+FailureBit	test/catch.hpp	/^        FailureBit = 0x10,$/;"	e	enum:Catch::ResultWas::OfType
+FalseTest	test/catch.hpp	/^        FalseTest = 0x04,           \/\/ Prefix expression with !$/;"	e	enum:Catch::ResultDisposition::Flags
+FatalErrorCondition	test/catch.hpp	/^        FatalErrorCondition = 0x200 | FailureBit$/;"	e	enum:Catch::ResultWas::OfType
+Flags	test/catch.hpp	/^    struct ResultDisposition { enum Flags {$/;"	g	struct:Catch::ResultDisposition
+IMutableEnumValuesRegistry	test/catch.hpp	/^    struct IMutableEnumValuesRegistry {$/;"	s	namespace:Catch
+INTERNAL_CATCH_DECLARE_SIG_TEST	test/catch.hpp	/^#define INTERNAL_CATCH_DECLARE_SIG_TEST(/;"	d
+INTERNAL_CATCH_DECLARE_SIG_TEST0	test/catch.hpp	/^#define INTERNAL_CATCH_DECLARE_SIG_TEST0(/;"	d
+INTERNAL_CATCH_DECLARE_SIG_TEST1	test/catch.hpp	/^#define INTERNAL_CATCH_DECLARE_SIG_TEST1(/;"	d
+INTERNAL_CATCH_DECLARE_SIG_TEST_METHOD	test/catch.hpp	/^#define INTERNAL_CATCH_DECLARE_SIG_TEST_METHOD(/;"	d
+INTERNAL_CATCH_DECLARE_SIG_TEST_METHOD0	test/catch.hpp	/^#define INTERNAL_CATCH_DECLARE_SIG_TEST_METHOD0(/;"	d
+INTERNAL_CATCH_DECLARE_SIG_TEST_METHOD1	test/catch.hpp	/^#define INTERNAL_CATCH_DECLARE_SIG_TEST_METHOD1(/;"	d
+INTERNAL_CATCH_DECLARE_SIG_TEST_METHOD_X	test/catch.hpp	/^#define INTERNAL_CATCH_DECLARE_SIG_TEST_METHOD_X(/;"	d
+INTERNAL_CATCH_DECLARE_SIG_TEST_X	test/catch.hpp	/^#define INTERNAL_CATCH_DECLARE_SIG_TEST_X(/;"	d
+INTERNAL_CATCH_DEF	test/catch.hpp	/^#define INTERNAL_CATCH_DEF(/;"	d
+INTERNAL_CATCH_DEFINE_SIG_TEST	test/catch.hpp	/^#define INTERNAL_CATCH_DEFINE_SIG_TEST(/;"	d
+INTERNAL_CATCH_DEFINE_SIG_TEST0	test/catch.hpp	/^#define INTERNAL_CATCH_DEFINE_SIG_TEST0(/;"	d
+INTERNAL_CATCH_DEFINE_SIG_TEST1	test/catch.hpp	/^#define INTERNAL_CATCH_DEFINE_SIG_TEST1(/;"	d
+INTERNAL_CATCH_DEFINE_SIG_TEST_METHOD	test/catch.hpp	/^#define INTERNAL_CATCH_DEFINE_SIG_TEST_METHOD(/;"	d
+INTERNAL_CATCH_DEFINE_SIG_TEST_METHOD0	test/catch.hpp	/^#define INTERNAL_CATCH_DEFINE_SIG_TEST_METHOD0(/;"	d
+INTERNAL_CATCH_DEFINE_SIG_TEST_METHOD1	test/catch.hpp	/^#define INTERNAL_CATCH_DEFINE_SIG_TEST_METHOD1(/;"	d
+INTERNAL_CATCH_DEFINE_SIG_TEST_METHOD_X	test/catch.hpp	/^#define INTERNAL_CATCH_DEFINE_SIG_TEST_METHOD_X(/;"	d
+INTERNAL_CATCH_DEFINE_SIG_TEST_X	test/catch.hpp	/^#define INTERNAL_CATCH_DEFINE_SIG_TEST_X(/;"	d
+INTERNAL_CATCH_EXPAND1	test/catch.hpp	/^#define INTERNAL_CATCH_EXPAND1(/;"	d
+INTERNAL_CATCH_EXPAND2	test/catch.hpp	/^#define INTERNAL_CATCH_EXPAND2(/;"	d
+INTERNAL_CATCH_EXPAND_VARGS	test/catch.hpp	/^#define INTERNAL_CATCH_EXPAND_VARGS(/;"	d
+INTERNAL_CATCH_MAKE_NAMESPACE	test/catch.hpp	/^#define INTERNAL_CATCH_MAKE_NAMESPACE(/;"	d
+INTERNAL_CATCH_MAKE_NAMESPACE2	test/catch.hpp	/^#define INTERNAL_CATCH_MAKE_NAMESPACE2(/;"	d
+INTERNAL_CATCH_MAKE_TYPE_LIST	test/catch.hpp	/^#define INTERNAL_CATCH_MAKE_TYPE_LIST(/;"	d
+INTERNAL_CATCH_MAKE_TYPE_LIST2	test/catch.hpp	/^#define INTERNAL_CATCH_MAKE_TYPE_LIST2(/;"	d
+INTERNAL_CATCH_MAKE_TYPE_LISTS_FROM_TYPES	test/catch.hpp	/^#define INTERNAL_CATCH_MAKE_TYPE_LISTS_FROM_TYPES(/;"	d
+INTERNAL_CATCH_METHOD_AS_TEST_CASE	test/catch.hpp	/^    #define INTERNAL_CATCH_METHOD_AS_TEST_CASE(/;"	d
+INTERNAL_CATCH_NOINTERNAL_CATCH_DEF	test/catch.hpp	/^#define INTERNAL_CATCH_NOINTERNAL_CATCH_DEF$/;"	d
+INTERNAL_CATCH_NTTP_0	test/catch.hpp	/^#define INTERNAL_CATCH_NTTP_0$/;"	d
+INTERNAL_CATCH_NTTP_0	test/catch.hpp	/^#define INTERNAL_CATCH_NTTP_0(/;"	d
+INTERNAL_CATCH_NTTP_1	test/catch.hpp	/^#define INTERNAL_CATCH_NTTP_1(/;"	d
+INTERNAL_CATCH_NTTP_GEN	test/catch.hpp	/^#define INTERNAL_CATCH_NTTP_GEN(/;"	d
+INTERNAL_CATCH_NTTP_REGISTER	test/catch.hpp	/^#define INTERNAL_CATCH_NTTP_REGISTER(/;"	d
+INTERNAL_CATCH_NTTP_REGISTER0	test/catch.hpp	/^#define INTERNAL_CATCH_NTTP_REGISTER0(/;"	d
+INTERNAL_CATCH_NTTP_REGISTER_METHOD	test/catch.hpp	/^#define INTERNAL_CATCH_NTTP_REGISTER_METHOD(/;"	d
+INTERNAL_CATCH_NTTP_REGISTER_METHOD0	test/catch.hpp	/^#define INTERNAL_CATCH_NTTP_REGISTER_METHOD0(/;"	d
+INTERNAL_CATCH_NTTP_REG_GEN	test/catch.hpp	/^#define INTERNAL_CATCH_NTTP_REG_GEN(/;"	d
+INTERNAL_CATCH_NTTP_REG_METHOD_GEN	test/catch.hpp	/^#define INTERNAL_CATCH_NTTP_REG_METHOD_GEN(/;"	d
+INTERNAL_CATCH_REGISTER_TESTCASE	test/catch.hpp	/^    #define INTERNAL_CATCH_REGISTER_TESTCASE(/;"	d
+INTERNAL_CATCH_REMOVE_PARENS	test/catch.hpp	/^#define INTERNAL_CATCH_REMOVE_PARENS(/;"	d
+INTERNAL_CATCH_REMOVE_PARENS_10_ARG	test/catch.hpp	/^#define INTERNAL_CATCH_REMOVE_PARENS_10_ARG(/;"	d
+INTERNAL_CATCH_REMOVE_PARENS_11_ARG	test/catch.hpp	/^#define INTERNAL_CATCH_REMOVE_PARENS_11_ARG(/;"	d
+INTERNAL_CATCH_REMOVE_PARENS_1_ARG	test/catch.hpp	/^#define INTERNAL_CATCH_REMOVE_PARENS_1_ARG(/;"	d
+INTERNAL_CATCH_REMOVE_PARENS_2_ARG	test/catch.hpp	/^#define INTERNAL_CATCH_REMOVE_PARENS_2_ARG(/;"	d
+INTERNAL_CATCH_REMOVE_PARENS_3_ARG	test/catch.hpp	/^#define INTERNAL_CATCH_REMOVE_PARENS_3_ARG(/;"	d
+INTERNAL_CATCH_REMOVE_PARENS_4_ARG	test/catch.hpp	/^#define INTERNAL_CATCH_REMOVE_PARENS_4_ARG(/;"	d
+INTERNAL_CATCH_REMOVE_PARENS_5_ARG	test/catch.hpp	/^#define INTERNAL_CATCH_REMOVE_PARENS_5_ARG(/;"	d
+INTERNAL_CATCH_REMOVE_PARENS_6_ARG	test/catch.hpp	/^#define INTERNAL_CATCH_REMOVE_PARENS_6_ARG(/;"	d
+INTERNAL_CATCH_REMOVE_PARENS_7_ARG	test/catch.hpp	/^#define INTERNAL_CATCH_REMOVE_PARENS_7_ARG(/;"	d
+INTERNAL_CATCH_REMOVE_PARENS_8_ARG	test/catch.hpp	/^#define INTERNAL_CATCH_REMOVE_PARENS_8_ARG(/;"	d
+INTERNAL_CATCH_REMOVE_PARENS_9_ARG	test/catch.hpp	/^#define INTERNAL_CATCH_REMOVE_PARENS_9_ARG(/;"	d
+INTERNAL_CATCH_REMOVE_PARENS_GEN	test/catch.hpp	/^#define INTERNAL_CATCH_REMOVE_PARENS_GEN(/;"	d
+INTERNAL_CATCH_STRINGIZE	test/catch.hpp	/^#define INTERNAL_CATCH_STRINGIZE(/;"	d
+INTERNAL_CATCH_STRINGIZE2	test/catch.hpp	/^#define INTERNAL_CATCH_STRINGIZE2(/;"	d
+INTERNAL_CATCH_STRINGIZE3	test/catch.hpp	/^#define INTERNAL_CATCH_STRINGIZE3(/;"	d
+INTERNAL_CATCH_STRINGIZE_WITHOUT_PARENS	test/catch.hpp	/^#define INTERNAL_CATCH_STRINGIZE_WITHOUT_PARENS(/;"	d
+INTERNAL_CATCH_TEMPLATE_LIST_TEST_CASE	test/catch.hpp	/^    #define INTERNAL_CATCH_TEMPLATE_LIST_TEST_CASE(/;"	d
+INTERNAL_CATCH_TEMPLATE_LIST_TEST_CASE_2	test/catch.hpp	/^    #define INTERNAL_CATCH_TEMPLATE_LIST_TEST_CASE_2(/;"	d
+INTERNAL_CATCH_TEMPLATE_LIST_TEST_CASE_METHOD	test/catch.hpp	/^#define INTERNAL_CATCH_TEMPLATE_LIST_TEST_CASE_METHOD(/;"	d
+INTERNAL_CATCH_TEMPLATE_LIST_TEST_CASE_METHOD_2	test/catch.hpp	/^    #define INTERNAL_CATCH_TEMPLATE_LIST_TEST_CASE_METHOD_2(/;"	d
+INTERNAL_CATCH_TEMPLATE_PRODUCT_TEST_CASE	test/catch.hpp	/^    #define INTERNAL_CATCH_TEMPLATE_PRODUCT_TEST_CASE(/;"	d
+INTERNAL_CATCH_TEMPLATE_PRODUCT_TEST_CASE2	test/catch.hpp	/^    #define INTERNAL_CATCH_TEMPLATE_PRODUCT_TEST_CASE2(/;"	d
+INTERNAL_CATCH_TEMPLATE_PRODUCT_TEST_CASE_METHOD	test/catch.hpp	/^    #define INTERNAL_CATCH_TEMPLATE_PRODUCT_TEST_CASE_METHOD(/;"	d
+INTERNAL_CATCH_TEMPLATE_PRODUCT_TEST_CASE_METHOD_2	test/catch.hpp	/^    #define INTERNAL_CATCH_TEMPLATE_PRODUCT_TEST_CASE_METHOD_2(/;"	d
+INTERNAL_CATCH_TEMPLATE_PRODUCT_TEST_CASE_METHOD_SIG	test/catch.hpp	/^    #define INTERNAL_CATCH_TEMPLATE_PRODUCT_TEST_CASE_METHOD_SIG(/;"	d
+INTERNAL_CATCH_TEMPLATE_PRODUCT_TEST_CASE_SIG	test/catch.hpp	/^    #define INTERNAL_CATCH_TEMPLATE_PRODUCT_TEST_CASE_SIG(/;"	d
+INTERNAL_CATCH_TEMPLATE_TEST_CASE	test/catch.hpp	/^    #define INTERNAL_CATCH_TEMPLATE_TEST_CASE(/;"	d
+INTERNAL_CATCH_TEMPLATE_TEST_CASE_2	test/catch.hpp	/^    #define INTERNAL_CATCH_TEMPLATE_TEST_CASE_2(/;"	d
+INTERNAL_CATCH_TEMPLATE_TEST_CASE_METHOD	test/catch.hpp	/^    #define INTERNAL_CATCH_TEMPLATE_TEST_CASE_METHOD(/;"	d
+INTERNAL_CATCH_TEMPLATE_TEST_CASE_METHOD_2	test/catch.hpp	/^    #define INTERNAL_CATCH_TEMPLATE_TEST_CASE_METHOD_2(/;"	d
+INTERNAL_CATCH_TEMPLATE_TEST_CASE_METHOD_NO_REGISTRATION	test/catch.hpp	/^        #define INTERNAL_CATCH_TEMPLATE_TEST_CASE_METHOD_NO_REGISTRATION(/;"	d
+INTERNAL_CATCH_TEMPLATE_TEST_CASE_METHOD_NO_REGISTRATION_2	test/catch.hpp	/^    #define INTERNAL_CATCH_TEMPLATE_TEST_CASE_METHOD_NO_REGISTRATION_2(/;"	d
+INTERNAL_CATCH_TEMPLATE_TEST_CASE_METHOD_SIG	test/catch.hpp	/^    #define INTERNAL_CATCH_TEMPLATE_TEST_CASE_METHOD_SIG(/;"	d
+INTERNAL_CATCH_TEMPLATE_TEST_CASE_METHOD_SIG_NO_REGISTRATION	test/catch.hpp	/^        #define INTERNAL_CATCH_TEMPLATE_TEST_CASE_METHOD_SIG_NO_REGISTRATION(/;"	d
+INTERNAL_CATCH_TEMPLATE_TEST_CASE_NO_REGISTRATION	test/catch.hpp	/^        #define INTERNAL_CATCH_TEMPLATE_TEST_CASE_NO_REGISTRATION(/;"	d
+INTERNAL_CATCH_TEMPLATE_TEST_CASE_NO_REGISTRATION_2	test/catch.hpp	/^    #define INTERNAL_CATCH_TEMPLATE_TEST_CASE_NO_REGISTRATION_2(/;"	d
+INTERNAL_CATCH_TEMPLATE_TEST_CASE_SIG	test/catch.hpp	/^    #define INTERNAL_CATCH_TEMPLATE_TEST_CASE_SIG(/;"	d
+INTERNAL_CATCH_TEMPLATE_TEST_CASE_SIG_NO_REGISTRATION	test/catch.hpp	/^        #define INTERNAL_CATCH_TEMPLATE_TEST_CASE_SIG_NO_REGISTRATION(/;"	d
+INTERNAL_CATCH_TESTCASE	test/catch.hpp	/^    #define INTERNAL_CATCH_TESTCASE(/;"	d
+INTERNAL_CATCH_TESTCASE2	test/catch.hpp	/^    #define INTERNAL_CATCH_TESTCASE2(/;"	d
+INTERNAL_CATCH_TESTCASE_METHOD_NO_REGISTRATION	test/catch.hpp	/^    #define INTERNAL_CATCH_TESTCASE_METHOD_NO_REGISTRATION(/;"	d
+INTERNAL_CATCH_TESTCASE_NO_REGISTRATION	test/catch.hpp	/^    #define INTERNAL_CATCH_TESTCASE_NO_REGISTRATION(/;"	d
+INTERNAL_CATCH_TEST_CASE_METHOD	test/catch.hpp	/^    #define INTERNAL_CATCH_TEST_CASE_METHOD(/;"	d
+INTERNAL_CATCH_TEST_CASE_METHOD2	test/catch.hpp	/^    #define INTERNAL_CATCH_TEST_CASE_METHOD2(/;"	d
+INTERNAL_CATCH_TYPE_GEN	test/catch.hpp	/^#define INTERNAL_CATCH_TYPE_GEN\\/;"	d
+INTERNAL_CATCH_UNIQUE_NAME	test/catch.hpp	/^#  define INTERNAL_CATCH_UNIQUE_NAME(/;"	d
+INTERNAL_CATCH_UNIQUE_NAME_LINE	test/catch.hpp	/^#define INTERNAL_CATCH_UNIQUE_NAME_LINE(/;"	d
+INTERNAL_CATCH_UNIQUE_NAME_LINE2	test/catch.hpp	/^#define INTERNAL_CATCH_UNIQUE_NAME_LINE2(/;"	d
+INTERNAL_CATCH_VA_NARGS_IMPL	test/catch.hpp	/^#define INTERNAL_CATCH_VA_NARGS_IMPL(/;"	d
+IStream	test/catch.hpp	/^    struct IStream {$/;"	s	namespace:Catch
+ITestCaseRegistry	test/catch.hpp	/^    struct ITestCaseRegistry {$/;"	s	namespace:Catch
+ITestInvoker	test/catch.hpp	/^    struct ITestInvoker {$/;"	s	namespace:Catch
+Info	test/catch.hpp	/^        Info = 1,$/;"	e	enum:Catch::ResultWas::OfType
+IniParser	README.md	/^# IniParser$/;"	c
+IniParser	iniparser.h	/^    IniParser() {}$/;"	f	class:ini::IniParser
+IniParser	iniparser.h	/^    IniParser(std::string file_path) {$/;"	f	class:ini::IniParser
+IniParser	iniparser.h	/^  class IniParser {$/;"	c	namespace:ini
+IniParser	test/unit.cpp	/^using IniParser = ini::IniParser;$/;"	t	typeref:typename:ini::IniParser	file:
+IsStreamInsertable	test/catch.hpp	/^        class IsStreamInsertable {$/;"	c	namespace:Catch::Detail
+License	README.md	/^## License$/;"	s
+Mask	test/root.ini	/^Mask=*.log$/;"	k	section:Temp
+Motiviaton	README.md	/^## Motiviaton$/;"	s
+NameAndTags	test/catch.hpp	/^struct NameAndTags {$/;"	s	namespace:Catch
+New	test/test1.ini	/^[New]$/;"	s
+No	test/catch.hpp	/^        No$/;"	e	enum:Catch::CaseSensitive::Choice
+NonCopyable	test/catch.hpp	/^    class NonCopyable {$/;"	c	namespace:Catch
+Normal	test/catch.hpp	/^        Normal = 0x01,$/;"	e	enum:Catch::ResultDisposition::Flags
+OfType	test/catch.hpp	/^    struct ResultWas { enum OfType {$/;"	g	struct:Catch::ResultWas
+Ok	test/catch.hpp	/^        Ok = 0,$/;"	e	enum:Catch::ResultWas::OfType
+RegistrarForTagAliases	test/catch.hpp	/^    struct RegistrarForTagAliases {$/;"	s	namespace:Catch
+ResultDisposition	test/catch.hpp	/^    struct ResultDisposition { enum Flags {$/;"	s	namespace:Catch
+ResultWas	test/catch.hpp	/^    struct ResultWas { enum OfType {$/;"	s	namespace:Catch
+ReusableStringStream	test/catch.hpp	/^    class ReusableStringStream {$/;"	c	namespace:Catch
+Root	test/root.ini	/^[Root]$/;"	s
+Settings	test/root.ini	/^[Settings]$/;"	s
+Settings	test/test.ini	/^[Settings]$/;"	s
+Settings	test/test1.ini	/^[Settings]$/;"	s
+SourceLineInfo	test/catch.hpp	/^        SourceLineInfo( char const* _file, std::size_t _line ) noexcept$/;"	f	struct:Catch::SourceLineInfo
+SourceLineInfo	test/catch.hpp	/^    struct SourceLineInfo {$/;"	s	namespace:Catch
+StreamEndStop	test/catch.hpp	/^    struct StreamEndStop {$/;"	s	namespace:Catch
+StringMaker	test/catch.hpp	/^    struct StringMaker {$/;"	s	namespace:Catch
+StringMaker	test/catch.hpp	/^    struct StringMaker<NSObject*> {$/;"	s	namespace:Catch
+StringMaker	test/catch.hpp	/^    struct StringMaker<NSString*> {$/;"	s	namespace:Catch
+StringMaker	test/catch.hpp	/^    struct StringMaker<R C::*> {$/;"	s	namespace:Catch
+StringMaker	test/catch.hpp	/^    struct StringMaker<R, typename std::enable_if<is_range<R>::value && !::Catch::Detail::IsStre/;"	s	namespace:Catch
+StringMaker	test/catch.hpp	/^    struct StringMaker<T*> {$/;"	s	namespace:Catch
+StringMaker	test/catch.hpp	/^    struct StringMaker<T[SZ]> {$/;"	s	namespace:Catch
+StringMaker	test/catch.hpp	/^    struct StringMaker<T^> {$/;"	s	namespace:Catch
+StringMaker	test/catch.hpp	/^    struct StringMaker<bool> {$/;"	s	namespace:Catch
+StringMaker	test/catch.hpp	/^    struct StringMaker<char *> {$/;"	s	namespace:Catch
+StringMaker	test/catch.hpp	/^    struct StringMaker<char const *> {$/;"	s	namespace:Catch
+StringMaker	test/catch.hpp	/^    struct StringMaker<char> {$/;"	s	namespace:Catch
+StringMaker	test/catch.hpp	/^    struct StringMaker<char[SZ]> {$/;"	s	namespace:Catch
+StringMaker	test/catch.hpp	/^    struct StringMaker<double> {$/;"	s	namespace:Catch
+StringMaker	test/catch.hpp	/^    struct StringMaker<float> {$/;"	s	namespace:Catch
+StringMaker	test/catch.hpp	/^    struct StringMaker<int> {$/;"	s	namespace:Catch
+StringMaker	test/catch.hpp	/^    struct StringMaker<long long> {$/;"	s	namespace:Catch
+StringMaker	test/catch.hpp	/^    struct StringMaker<long> {$/;"	s	namespace:Catch
+StringMaker	test/catch.hpp	/^    struct StringMaker<signed char> {$/;"	s	namespace:Catch
+StringMaker	test/catch.hpp	/^    struct StringMaker<signed char[SZ]> {$/;"	s	namespace:Catch
+StringMaker	test/catch.hpp	/^    struct StringMaker<std::monostate> {$/;"	s	namespace:Catch
+StringMaker	test/catch.hpp	/^    struct StringMaker<std::nullptr_t> {$/;"	s	namespace:Catch
+StringMaker	test/catch.hpp	/^    struct StringMaker<std::optional<T> > {$/;"	s	namespace:Catch
+StringMaker	test/catch.hpp	/^    struct StringMaker<std::pair<T1, T2> > {$/;"	s	namespace:Catch
+StringMaker	test/catch.hpp	/^    struct StringMaker<std::string> {$/;"	s	namespace:Catch
+StringMaker	test/catch.hpp	/^    struct StringMaker<std::string_view> {$/;"	s	namespace:Catch
+StringMaker	test/catch.hpp	/^    struct StringMaker<std::wstring> {$/;"	s	namespace:Catch
+StringMaker	test/catch.hpp	/^    struct StringMaker<std::wstring_view> {$/;"	s	namespace:Catch
+StringMaker	test/catch.hpp	/^    struct StringMaker<unsigned char> {$/;"	s	namespace:Catch
+StringMaker	test/catch.hpp	/^    struct StringMaker<unsigned char[SZ]> {$/;"	s	namespace:Catch
+StringMaker	test/catch.hpp	/^    struct StringMaker<unsigned int> {$/;"	s	namespace:Catch
+StringMaker	test/catch.hpp	/^    struct StringMaker<unsigned long long> {$/;"	s	namespace:Catch
+StringMaker	test/catch.hpp	/^    struct StringMaker<unsigned long> {$/;"	s	namespace:Catch
+StringMaker	test/catch.hpp	/^    struct StringMaker<wchar_t *> {$/;"	s	namespace:Catch
+StringMaker	test/catch.hpp	/^    struct StringMaker<wchar_t const *> {$/;"	s	namespace:Catch
+StringRef	test/catch.hpp	/^        StringRef( StringRef const& other ) noexcept$/;"	f	class:Catch::StringRef
+StringRef	test/catch.hpp	/^        StringRef( StringRef&& other ) noexcept$/;"	f	class:Catch::StringRef
+StringRef	test/catch.hpp	/^        StringRef( char const* rawChars, size_type size ) noexcept$/;"	f	class:Catch::StringRef
+StringRef	test/catch.hpp	/^        StringRef( std::string const& stdString ) noexcept$/;"	f	class:Catch::StringRef
+StringRef	test/catch.hpp	/^        StringRef() noexcept$/;"	f	class:Catch::StringRef
+StringRef	test/catch.hpp	/^    class StringRef {$/;"	c	namespace:Catch
+SuppressFail	test/catch.hpp	/^        SuppressFail = 0x08         \/\/ Failures are reported but do not fail the test$/;"	e	enum:Catch::ResultDisposition::Flags
+TWOBLUECUBES_SINGLE_INCLUDE_CATCH_HPP_INCLUDED	test/catch.hpp	/^#define TWOBLUECUBES_SINGLE_INCLUDE_CATCH_HPP_INCLUDED$/;"	d
+Temp	test/root.ini	/^[Temp]$/;"	s
+Test	test/test.ini	/^[Test]$/;"	s
+Test	test/test1.ini	/^[Test]$/;"	s
+TestInvokerAsMethod	test/catch.hpp	/^    TestInvokerAsMethod( void (C::*testAsMethod)() ) noexcept : m_testAsMethod( testAsMethod ) {/;"	f	class:Catch::TestInvokerAsMethod
+TestInvokerAsMethod	test/catch.hpp	/^class TestInvokerAsMethod : public ITestInvoker {$/;"	c	namespace:Catch
+ThrewException	test/catch.hpp	/^        ThrewException = Exception | 1,$/;"	e	enum:Catch::ResultWas::OfType
+TupleElementPrinter	test/catch.hpp	/^            struct TupleElementPrinter {$/;"	s	namespace:Catch::Detail
+TupleElementPrinter	test/catch.hpp	/^            struct TupleElementPrinter<Tuple, N, false> {$/;"	s	namespace:Catch::Detail
+Type	test/root.ini	/^Type=1$/;"	k	section:Settings
+Unknown	test/catch.hpp	/^        Unknown = -1,$/;"	e	enum:Catch::ResultWas::OfType
+Usage	README.md	/^## Usage$/;"	s
+Warning	test/catch.hpp	/^        Warning = 2,$/;"	e	enum:Catch::ResultWas::OfType
+Yes	test/catch.hpp	/^        Yes,$/;"	e	enum:Catch::CaseSensitive::Choice
+_BSD_SOURCE	test/catch.hpp	/^#   define _BSD_SOURCE$/;"	d
+__anonc01d212d0202	test/catch.hpp	/^                    [](const auto& value) {$/;"	f	namespace:Catch	file:
+_lines	iniparser.h	/^    vecstr _lines;$/;"	m	class:ini::IniParser	typeref:typename:vecstr
+_split	iniparser.h	/^    vecstr _split(std::string& str, const std::string delim) {$/;"	f	class:ini::IniParser	typeref:typename:vecstr
+_values	iniparser.h	/^    inimap _values;$/;"	m	class:ini::IniParser	typeref:typename:inimap
+all	test/Makefile	/^all:$/;"	t
+always_false	test/catch.hpp	/^struct always_false : std::false_type {};$/;"	s	namespace:Catch
+arcSafeRelease	test/catch.hpp	/^inline void arcSafeRelease( NSObject* ){}$/;"	f	typeref:typename:void
+arcSafeRelease	test/catch.hpp	/^inline void arcSafeRelease( NSObject* obj ) {$/;"	f	typeref:typename:void
+bytes	test/catch.hpp	/^            auto bytes = System::Text::Encoding::UTF8->GetBytes(ref->ToString());$/;"	v	namespace:Catch::Detail	typeref:typename:auto
+capturedExpression	test/catch.hpp	/^        StringRef capturedExpression;$/;"	m	struct:Catch::AssertionInfo	typeref:typename:StringRef
+clean	test/Makefile	/^clean:$/;"	t
+comment	README.md	/^# comment$/;"	c
+convert	test/catch.hpp	/^            convert(const Fake& value) {$/;"	f	struct:Catch::StringMaker	typeref:typename:std::enable_if<::Catch::Detail::IsStreamInsertable<Fake>::value,std::string>::type
+convert	test/catch.hpp	/^        static std::string convert( R const& range ) {$/;"	f	struct:Catch::StringMaker	typeref:typename:std::string
+convert	test/catch.hpp	/^        static std::string convert(NSObject* nsObject) {$/;"	f	struct:Catch::StringMaker	typeref:typename:std::string
+convert	test/catch.hpp	/^        static std::string convert(NSString * nsstring) {$/;"	f	struct:Catch::StringMaker	typeref:typename:std::string
+convert	test/catch.hpp	/^        static std::string convert(R C::* p) {$/;"	f	struct:Catch::StringMaker	typeref:typename:std::string
+convert	test/catch.hpp	/^        static std::string convert(T const(&arr)[SZ]) {$/;"	f	struct:Catch::StringMaker	typeref:typename:std::string
+convert	test/catch.hpp	/^        static std::string convert(U* p) {$/;"	f	struct:Catch::StringMaker	typeref:typename:std::string
+convert	test/catch.hpp	/^        static std::string convert(char const* str) {$/;"	f	struct:Catch::StringMaker	typeref:typename:std::string
+convert	test/catch.hpp	/^        static std::string convert(const std::monostate&) {$/;"	f	struct:Catch::StringMaker	typeref:typename:std::string
+convert	test/catch.hpp	/^        static std::string convert(const std::optional<T>& optional) {$/;"	f	struct:Catch::StringMaker	typeref:typename:std::string
+convert	test/catch.hpp	/^        static std::string convert(const std::pair<T1, T2>& pair) {$/;"	f	struct:Catch::StringMaker	typeref:typename:std::string
+convert	test/catch.hpp	/^        static std::string convert(signed char const* str) {$/;"	f	struct:Catch::StringMaker	typeref:typename:std::string
+convert	test/catch.hpp	/^        static std::string convert(unsigned char const* str) {$/;"	f	struct:Catch::StringMaker	typeref:typename:std::string
+convertUnknownEnumToString	test/catch.hpp	/^        std::string convertUnknownEnumToString( E e ) {$/;"	f	namespace:Catch::Detail	typeref:typename:std::string
+convertUnstreamable	test/catch.hpp	/^         std::string>::type convertUnstreamable(T const& ex) {$/;"	f	namespace:Catch::Detail
+convertUnstreamable	test/catch.hpp	/^        , std::string>::type convertUnstreamable( T const& value ) {$/;"	f	namespace:Catch::Detail	typeref:typename:std::enable_if<std::is_enum<T>::value,std::string>::type
+convertUnstreamable	test/catch.hpp	/^        std::string>::type convertUnstreamable( T const& ) {$/;"	f	namespace:Catch::Detail
+counter	test/test1.ini	/^counter=20$/;"	k	section:New
+data	test/unit.cpp	/^        auto data = ipa.parse("test.ini");$/;"	v	typeref:typename:auto
+data	test/unit.cpp	/^        auto data = ipa.parse();$/;"	v	typeref:typename:auto
+empty	test/catch.hpp	/^        auto empty() const noexcept -> bool {$/;"	f	class:Catch::StringRef	typeref:typename:auto
+encoding	test/test.ini	/^encoding=utf16$/;"	k	section:Settings
+encoding	test/test1.ini	/^encoding=utf16$/;"	k	section:Settings
+exe	test/test.ini	/^exe=\/home\/test\/bin$/;"	k
+exe	test/test1.ini	/^exe=\/home\/test\/bin$/;"	k
+file	test/catch.hpp	/^        char const* file;$/;"	m	struct:Catch::SourceLineInfo	typeref:typename:char const *
+foo	test/test.ini	/^foo=bar$/;"	k	section:Test
+foo	test/test1.ini	/^foo=bar$/;"	k	section:Test
+get	test/catch.hpp	/^        auto get() -> std::ostream& { return *m_oss; }$/;"	f	class:Catch::ReusableStringStream	typeref:typename:std::ostream &
+hello	test/test.ini	/^hello=world$/;"	k	section:Test
+hello	test/test1.ini	/^hello=world$/;"	k	section:Test
+ini	iniparser.h	/^namespace ini {$/;"	n
+inimap	iniparser.h	/^typedef std::map<std::string, std::map<std::string, std::string>> inimap;$/;"	t	typeref:typename:std::map<std::string,std::map<std::string,std::string>>
+invoke	test/catch.hpp	/^    void invoke() const override {$/;"	f	class:Catch::TestInvokerAsMethod	typeref:typename:void
+ipa	test/unit.cpp	/^IniParser ipa;$/;"	v	typeref:typename:IniParser
+isFalseTest	test/catch.hpp	/^    inline bool isFalseTest( int flags ) { return ( flags & ResultDisposition::FalseTest ) != 0;/;"	f	namespace:Catch	typeref:typename:bool
+is_callable	test/catch.hpp	/^struct is_callable<Fun(Args...)> : decltype(is_callable_tester::test<Fun, Args...>(0)) {};$/;"	s	namespace:Catch
+is_callable_tester	test/catch.hpp	/^struct is_callable_tester {$/;"	s	namespace:Catch
+is_range	test/catch.hpp	/^    struct is_range {$/;"	s	namespace:Catch
+is_range	test/catch.hpp	/^    struct is_range<T^> {$/;"	s	namespace:Catch
+lang	test/test.ini	/^lang=en_UK$/;"	k	section:Settings
+lang	test/test1.ini	/^lang=de_DE$/;"	k	section:Settings
+line	test/catch.hpp	/^        std::size_t line;$/;"	m	struct:Catch::SourceLineInfo	typeref:typename:std::size_t
+lineInfo	test/catch.hpp	/^        SourceLineInfo lineInfo;$/;"	m	struct:Catch::AssertionInfo	typeref:typename:SourceLineInfo
+m_data	test/catch.hpp	/^        char* m_data = nullptr;$/;"	m	class:Catch::StringRef	typeref:typename:char *
+m_index	test/catch.hpp	/^        std::size_t m_index;$/;"	m	class:Catch::ReusableStringStream	typeref:typename:std::size_t
+m_name	test/catch.hpp	/^            StringRef m_name;$/;"	m	struct:Catch::Detail::EnumInfo	typeref:typename:StringRef
+m_oss	test/catch.hpp	/^        std::ostream* m_oss;$/;"	m	class:Catch::ReusableStringStream	typeref:typename:std::ostream *
+m_size	test/catch.hpp	/^        size_type m_size;$/;"	m	class:Catch::StringRef	typeref:typename:size_type
+m_start	test/catch.hpp	/^        char const* m_start;$/;"	m	class:Catch::StringRef	typeref:typename:char const *
+m_testAsMethod	test/catch.hpp	/^    void (C::*m_testAsMethod)();$/;"	m	class:Catch::TestInvokerAsMethod	typeref:typename:void (C::*)()
+m_values	test/catch.hpp	/^            std::vector<std::pair<int, std::string>> m_values;$/;"	m	struct:Catch::Detail::EnumInfo	typeref:typename:std::vector<std::pair<int,std::string>>
+macroName	test/catch.hpp	/^        StringRef macroName;$/;"	m	struct:Catch::AssertionInfo	typeref:typename:StringRef
+makeTestInvoker	test/catch.hpp	/^auto makeTestInvoker( void (C::*testAsMethod)() ) noexcept -> ITestInvoker* {$/;"	f	namespace:Catch	typeref:typename:auto
+mpl_	test/catch.hpp	/^namespace mpl_{$/;"	n
+name	test/catch.hpp	/^    StringRef name;$/;"	m	struct:Catch::NameAndTags	typeref:typename:StringRef
+ndata	test/unit.cpp	/^        auto ndata = ipa.parse();$/;"	v	typeref:typename:auto
+not_this_one	test/catch.hpp	/^    struct not_this_one {}; \/\/ Tag type for detecting which begin\/ end are being selected$/;"	s	namespace:Catch
+operator +	test/catch.hpp	/^    T const& operator + ( T const& value, StreamEndStop ) {$/;"	f	namespace:Catch	typeref:typename:T const &
+operator <<	test/catch.hpp	/^        auto operator << ( T const& value ) -> ReusableStringStream& {$/;"	f	class:Catch::ReusableStringStream	typeref:typename:ReusableStringStream &
+operator =	test/catch.hpp	/^        auto operator = ( StringRef const &other ) noexcept -> StringRef& {$/;"	f	class:Catch::StringRef	typeref:typename:auto
+p	test/catch.hpp	/^            cli::pin_ptr<System::Byte> p = &bytes[0];$/;"	v	namespace:Catch::Detail	typeref:typename:cli::pin_ptr<System::Byte>
+parse	iniparser.h	/^    inimap parse() {$/;"	f	class:ini::IniParser	typeref:typename:inimap
+parse	iniparser.h	/^    inimap parse(std::string file) {$/;"	f	class:ini::IniParser	typeref:typename:inimap
+path	test/test.ini	/^path=\/home\/test\/config.txt$/;"	k
+path	test/test1.ini	/^path=\/home\/test\/config.txt$/;"	k
+performOptionalSelector	test/catch.hpp	/^inline id performOptionalSelector( id obj, SEL sel ) {$/;"	f	typeref:typename:id
+precision	test/catch.hpp	/^        static int precision;$/;"	m	struct:Catch::StringMaker	typeref:typename:int
+print	test/catch.hpp	/^            static void print(const Tuple& tuple, std::ostream& os) {$/;"	f	struct:Catch::Detail::TupleElementPrinter	typeref:typename:void
+print	test/catch.hpp	/^            static void print(const Tuple&, std::ostream&) {}$/;"	f	struct:Catch::Detail::TupleElementPrinter	typeref:typename:void
+rangeToString	test/catch.hpp	/^        std::string rangeToString(InputIterator first, InputIterator last) {$/;"	f	namespace:Catch::Detail	typeref:typename:std::string
+rangeToString	test/catch.hpp	/^    std::string rangeToString( Range const& range ) {$/;"	f	namespace:Catch	typeref:typename:std::string
+rangeToString	test/catch.hpp	/^    std::string rangeToString( std::vector<bool, Allocator> const& v ) {$/;"	f	namespace:Catch	typeref:typename:std::string
+ratio_string	test/catch.hpp	/^struct ratio_string {$/;"	s	namespace:Catch
+ratio_string	test/catch.hpp	/^struct ratio_string<std::atto> {$/;"	s	namespace:Catch
+ratio_string	test/catch.hpp	/^struct ratio_string<std::femto> {$/;"	s	namespace:Catch
+ratio_string	test/catch.hpp	/^struct ratio_string<std::micro> {$/;"	s	namespace:Catch
+ratio_string	test/catch.hpp	/^struct ratio_string<std::milli> {$/;"	s	namespace:Catch
+ratio_string	test/catch.hpp	/^struct ratio_string<std::nano> {$/;"	s	namespace:Catch
+ratio_string	test/catch.hpp	/^struct ratio_string<std::pico> {$/;"	s	namespace:Catch
+rawMemoryToString	test/catch.hpp	/^        std::string rawMemoryToString( const T& object ) {$/;"	f	namespace:Catch::Detail	typeref:typename:std::string
+rdata	test/unit.cpp	/^        auto rdata = ipa.parse("root.ini"); $/;"	v	typeref:typename:auto
+read	iniparser.h	/^    bool read(std::string file) {$/;"	f	class:ini::IniParser	typeref:typename:bool
+rebuild	test/Makefile	/^rebuild:$/;"	t
+registerEnum	test/catch.hpp	/^        Detail::EnumInfo const& registerEnum( StringRef enumName, StringRef allEnums, std::initi/;"	f	struct:Catch::IMutableEnumValuesRegistry	typeref:typename:Detail::EnumInfo const &
+resultDisposition	test/catch.hpp	/^        ResultDisposition::Flags resultDisposition;$/;"	m	struct:Catch::AssertionInfo	typeref:typename:ResultDisposition::Flags
+run	test/Makefile	/^run:$/;"	t
+s_empty	test/catch.hpp	/^        static constexpr char const* const s_empty = "";$/;"	m	class:Catch::StringRef	typeref:typename:char const * const
+size	test/catch.hpp	/^        auto size() const noexcept -> size_type {$/;"	f	class:Catch::StringRef	typeref:typename:auto
+size_type	test/catch.hpp	/^        using size_type = std::size_t;$/;"	t	class:Catch::StringRef	typeref:typename:std::size_t
+stringify	test/catch.hpp	/^        inline std::string stringify( NSString* nsstring ) {$/;"	f	namespace:Catch::Detail	typeref:typename:std::string
+stringify	test/catch.hpp	/^        std::string stringify(const T& e) {$/;"	f	namespace:Catch::Detail	typeref:typename:std::string
+symbol	test/catch.hpp	/^std::string ratio_string<Ratio>::symbol() {$/;"	f	class:Catch::ratio_string	typeref:typename:std::string
+tags	test/catch.hpp	/^    StringRef tags;$/;"	m	struct:Catch::NameAndTags	typeref:typename:StringRef
+true_given	test/catch.hpp	/^template <typename> struct true_given : std::true_type {};$/;"	s	namespace:Catch
+value	test/catch.hpp	/^            static const bool value = decltype(test<std::ostream, const T&>(0))::value;$/;"	m	class:Catch::Detail::IsStreamInsertable	typeref:typename:const bool
+value	test/catch.hpp	/^        static const bool value = false;$/;"	m	struct:Catch::is_range	typeref:typename:const bool
+value	test/catch.hpp	/^        static const bool value =$/;"	m	struct:Catch::is_range	typeref:typename:const bool
+vecstr	iniparser.h	/^typedef std::vector<std::string> vecstr;$/;"	t	typeref:typename:std::vector<std::string>
+write	iniparser.h	/^    bool write(std::string file_path, inimap& data) {$/;"	f	class:ini::IniParser	typeref:typename:bool
+~IniParser	iniparser.h	/^    ~IniParser() { $/;"	f	class:ini::IniParser
+~StringRef	test/catch.hpp	/^        ~StringRef() noexcept {$/;"	f	class:Catch::StringRef
