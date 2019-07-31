@@ -1,17 +1,18 @@
 #include <fstream>
-#include <iostream>
 #include <map>
 #include <vector>
 
-typedef std::map<std::string, std::map<std::string, std::string>> inimap;
-typedef std::vector<std::string> vecstr;
-
 namespace ini {
-  class IniParser {
+
+using string = std::string;
+typedef std::map<string, std::map<string, string>> inimap;
+typedef std::vector<string> vecstr;
+
+class IniParser {
     public:
     IniParser() {}
-    IniParser(std::string file_path) {
-        read(file_path);
+    IniParser(string file_path) {
+        readFile(file_path);
     }
 
     ~IniParser() { 
@@ -19,8 +20,8 @@ namespace ini {
         _values.clear(); 
     }
 
-    inimap parse(std::string file) {
-        if(read(file))
+    inimap parseFile(string file) {
+        if(readFile(file))
             return parse();
         else {
             auto val = _values;
@@ -29,13 +30,21 @@ namespace ini {
         }
     }
 
+    inimap parseData(string& data) {
+        if(readData(data)) {
+            return parse();
+        } else {
+            auto val = _values;
+            val.clear();
+            return val;
+        }
+    }
+
     inimap parse() {
         _values.clear();
-        std::string head = "";
-        std::string key;
-        std::string val;
+        string head = "";
         vecstr vec;
-        for(std::string line : _lines) {
+        for(string line : _lines) {
             //ignoring ini comments at begin of line
             if(line[0] != '#' && line[0] != ';' && line[0] != ' ') {
                 if(line[0] == '[') {
@@ -43,11 +52,9 @@ namespace ini {
                     head = line.substr(1, line.length()-2);
                 } else {
                     if(line.find("=") > 0 && line != "") {
-                        vec = this->_split(line, "=");
-                        key = vec[0];
-                        val = vec[1];
-                        if(key != "" && val != "") {
-                            _values[head][key] = val;
+                        vec = this->_split(line, _keyValueDelim);
+                        if(vec[0] != "" && vec[1] != "") {
+                            _values[head][vec[0]] = vec[1];
                         }
                     }
                 }
@@ -56,19 +63,19 @@ namespace ini {
         return _values;
     }
 
-    bool write(std::string file_path, inimap& data) {
+    bool writeFile(string file_path, inimap& data) {
 
         std::ofstream file(file_path);
         try {
             for(auto const& m1 : data) {
                 if(m1.first != "") {
                     if(m1.first != data.begin()->first) {
-                        file << std::endl; 
+                        file << _lineSeparator; 
                     }
-                    file << '[' << m1.first << ']' << std::endl;
+                    file << '[' << m1.first << ']' << _lineSeparator;
                 }
                 for(auto const& m2 : m1.second) {
-                   file << m2.first << '=' << m2.second << std::endl;
+                   file << m2.first << _keyValueDelim << m2.second << std::endl;
                 }
             }
             file.close();
@@ -80,9 +87,29 @@ namespace ini {
         return false;
     }
 
-    bool read(std::string file) {
+    string writeData(inimap& data) {
+        try {
+            std::string str = "";
+            for(auto const& m1 : data) {
+                if(m1.first != "") {
+                    if(m1.first != data.begin()->first) {
+                        str += _lineSeparator; 
+                    }
+                    str += '[' + m1.first + ']' + _lineSeparator;
+                }
+                for(auto const& m2 : m1.second) {
+                   str += m2.first + _keyValueDelim + m2.second + _lineSeparator;
+                }
+            }
+            return str;
+        } catch(std::exception ex) {
+            throw;
+        }
+    }
+
+    bool readFile(string file) {
         _lines.clear();
-        std::string line;
+        string line;
         std::ifstream ini_file;
         try {
             ini_file.open(file);
@@ -99,15 +126,42 @@ namespace ini {
         return false;
     }
 
+    bool readData(string& data, string delimiter = "\n") {
+        _lines.clear();
+        vecstr vec = _split(data, delimiter);
+        for(string str : vec) {
+            _lines.push_back(str);
+        }
+        return true;
+    }
+
+    void setKeyValueDelimiter(string str) {
+        _keyValueDelim = str;
+    }
+
+    string getKeyValueDelimiter() {
+        return _keyValueDelim;
+    }
+
+    void setLineSeparator(string str) {
+        _lineSeparator = str;
+    }
+
+    string getLineSeparator(string str) {
+        return _lineSeparator;
+    }
+
     private:
     vecstr _lines;
     inimap _values;
+    string _keyValueDelim = "=";
+    string _lineSeparator = "\n";
 
-    vecstr _split(std::string& str, const std::string delim) {
+    vecstr _split(string& str, const string delim) {
         vecstr parts;
         std::size_t pos = 0;
-        std::string token;
-        while ((pos = str.find(delim)) != std::string::npos) {
+        string token;
+        while ((pos = str.find(delim)) != string::npos) {
             token = str.substr(0, pos);
             parts.push_back(token);
             str.erase(0, pos + delim.length());
@@ -115,5 +169,4 @@ namespace ini {
         parts.push_back(str);
         return parts;
     }
-  };
-}
+};}

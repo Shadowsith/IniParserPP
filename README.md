@@ -16,9 +16,7 @@ path=/home/test/config.txt
 [Test]
 value=120
 exe=/home/test/bin
-
 ```
-
 
 ```cpp
 #include "iniparser.h"
@@ -30,7 +28,7 @@ int main {
 
     // second way to read:
     IniParser ipa;
-    if(ini.read("test.ini")) {
+    if(ini.readFile("test.ini")) {
         // parse ini-data if file has red to 
         // std::map<std::string, std::map<std::string, std::string>>
         auto data = ini.parse();
@@ -43,7 +41,7 @@ int main {
         //remove value from existing
         data["Test"].erase("value");
 
-        if(ipa.write("test.ini"), data) {
+        if(ipa.writeFile("test.ini"), data) {
             // do something if writing was successful ...
         }
     }
