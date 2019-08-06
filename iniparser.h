@@ -4,11 +4,12 @@
 
 namespace ini {
 
-using string = std::string;
-typedef std::map<string, std::map<string, string>> inimap;
-typedef std::vector<string> vecstr;
+typedef std::map<std::string, std::map<std::string, std::string>> inimap;
 
 class IniParser {
+using string = std::string;
+typedef std::vector<string> vecstr;
+
     public:
     IniParser() {}
     IniParser(string file_path) {
@@ -64,7 +65,6 @@ class IniParser {
     }
 
     bool writeFile(string file_path, inimap& data) {
-
         std::ofstream file(file_path);
         try {
             for(auto const& m1 : data) {
@@ -75,7 +75,8 @@ class IniParser {
                     file << '[' << m1.first << ']' << _lineSeparator;
                 }
                 for(auto const& m2 : m1.second) {
-                   file << m2.first << _keyValueDelim << m2.second << std::endl;
+                   file << m2.first << _keyValueDelim << m2.second
+                       << _lineSeparator;
                 }
             }
             file.close();
@@ -113,12 +114,16 @@ class IniParser {
         std::ifstream ini_file;
         try {
             ini_file.open(file);
-            while(!ini_file.eof()) {
-                std::getline(ini_file, line);
-                _lines.push_back(line);
+            if(ini_file.good()) {
+                while(!ini_file.eof()) {
+                    std::getline(ini_file, line);
+                    _lines.push_back(line);
+                }
+                ini_file.close();
+                return true;
+            } else {
+                return false;
             }
-            ini_file.close();
-            return true;
         } catch(std::exception ex) {
             ini_file.close();
             throw;

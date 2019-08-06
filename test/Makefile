@@ -1,7 +1,7 @@
 all:
 	@echo "Build unit tests..."
 	@mkdir -p bin
-	@g++ -pipe unit.cpp -o ./bin/unit_test
+	@g++ -pipe unit.cpp -lpthread -o ./bin/unit_test
 run:
 	@echo "Run tests..."
 	@./bin/unit_test
