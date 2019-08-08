@@ -1,6 +1,6 @@
 [![Build status](https://ci.appveyor.com/api/projects/status/v7y5q5a0q45w1ib7?svg=true)](https://ci.appveyor.com/project/Shadowsith/iniparserpp)
 # IniParser
-A small, modern C++11 header only library for read, write and modify .INI 
+A small, modern C++11 header-only library for read, write and modify .INI 
 configuration files with help of std::map
 
 ----
@@ -9,7 +9,7 @@ configuration files with help of std::map
 2. [Documentation](#documentation)
     1. [Namespace](#namespace)
     2. [Typedefs](#typedefs)
-    3. [IniParser](#class)
+    3. [Class](#class)
        1. [Constructors](#constructors)
        2. [Destructor](#desturctor)
        3. [Private Member](#privatemember)
@@ -33,10 +33,13 @@ This project was highly inspired from the C#
 ### Namespace
 **ini**
 
+---
 ### Typedefs
 | Type | Description |
 |------|-------------|
 | inimap | Typedef for std::map\<std::string, std::map\<std::string, std::string\>\> |
+
+---
 
 <a href="#class"></a>
 ### Class IniParser
@@ -48,7 +51,8 @@ This project was highly inspired from the C#
 | IniParser(std::string file, inimap& data) | Creates new instance, reads file and parse data to inimap by reference |
 
 #### Destructor 
-| Name | Description 
+| Name | Description |
+|------|-------------|
 | ~IniParser() | clears all private container
 
 <a href="#privatemember"></a>
@@ -81,7 +85,7 @@ This project was highly inspired from the C#
 
 ## Examples
 <a href="#readwrite"></a>
-### Read and write INI file
+### Read and write .ini file
 ```ini
 # comment
 path=/home/test/config.txt
@@ -143,7 +147,7 @@ counter=20
 exe=/home/test/bin
 ```
 <a href="#create"></a>
-### Create new ini file
+### Create new .ini file
 ```cpp
 #include "iniparser.h"
 using IniParser = ini::IniParser;
