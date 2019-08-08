@@ -15,6 +15,11 @@ typedef std::vector<string> vecstr;
     IniParser(string file_path) {
         readFile(file_path);
     }
+    IniParser(string file_path, inimap& data) {
+        if(readFile(file_path)) {
+            data = parse();
+        }
+    }
 
     ~IniParser() { 
         _lines.clear();
@@ -99,7 +104,8 @@ typedef std::vector<string> vecstr;
                     str += '[' + m1.first + ']' + _lineSeparator;
                 }
                 for(auto const& m2 : m1.second) {
-                   str += m2.first + _keyValueDelim + m2.second + _lineSeparator;
+                   str += m2.first + _keyValueDelim + m2.second + 
+                        _lineSeparator;
                 }
             }
             return str;
