@@ -82,7 +82,7 @@ This project was highly inspired from the C#
 | writeFile(std::string file\_path) | bool | writes data into file 
 | writeData(std::string file\_path) | bool | writes data into std::string
 
-
+---
 ## Examples
 <a href="#readwrite"></a>
 ### Read and write .ini file
@@ -176,11 +176,12 @@ bin=/home/usr/dir/bin
 read=10
 write=5
 ```
-
+---
 <a href="#unit"></a>
 ## Unit Tests
 In subdir `test` are several unit tests written with the Catch2 C++ unit test library.
 To call the tests you can use GNU Make with `make && make run`
 
+---
 ## License
 [__MIT__](https://choosealicense.com/licenses/mit/)
