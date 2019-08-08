@@ -9,7 +9,7 @@ configuration files with help of std::map
 2. [Documentation](#documentation)
     1. [Namespace](#namespace)
     2. [Typedefs](#typedefs)
-    3. [Class IniParser](#class)
+    3. [IniParser](#class)
        1. [Constructors](#constructors)
        2. [Destructor](#desturctor)
        3. [Private Member](#privatemember)
@@ -18,6 +18,7 @@ configuration files with help of std::map
 3. [Examples](#examples)
     1. [Read and Write](#readwrite)
     2. [Create](#create)
+5. [Unit Tests](#unit)
 4. [License](#licence)
 ---
 ## Motiviaton
@@ -30,7 +31,7 @@ This project was highly inspired from the C#
 ---
 
 ### Namespace
-__ini __
+**ini**
 
 ### Typedefs
 | Type | Description |
@@ -38,7 +39,7 @@ __ini __
 | inimap | Typedef for std::map\<std::string, std::map\<std::string, std::string\>\> |
 
 <a href="#class"></a>
-### class IniParser
+### Class IniParser
 #### Constructors
 | Signature | Description |
 |-----------|-------------|
@@ -170,8 +171,12 @@ bin=/home/usr/dir/bin
 [Counter]
 read=10
 write=5
-
 ```
 
+<a href="#unit"></a>
+## Unit Tests
+In subdir `test` are several unit tests written with the Catch2 C++ unit test library.
+To call the tests you can use GNU Make with `make && make run`
+
 ## License
-__MIT__
+[__MIT__](https://choosealicense.com/licenses/mit/)
