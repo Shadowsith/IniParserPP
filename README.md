@@ -9,7 +9,7 @@ configuration files with help of std::map
 2. [Documentation](#documentation)
     1. [Namespace](#namespace)
     2. [Typedefs](#typedefs)
-    3. [Iniparser](#iniparser)
+    3. [Iniparser](#class IniParser)
        1. [Constructors](#constructor)
        2. [Destructor](#desturctor)
        3. [Private Member](#privatemember)
