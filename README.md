@@ -3,66 +3,74 @@
 A small, modern C++11 header only library for read, write and modify .INI 
 configuration files with help of std::map
 
-
+----
+## Content
+1. [Motiviaton](#Motiviaton)
+2. [Documentation](#documentation)
+    1. [Namespace](#namespace)
+    2. [Typedefs](#typedefs)
+    3. [Iniparser](#iniparser)
+       1. [Constructors](#constructor)
+       2. [Destructor](#desturctor)
+       3. [Private Member](#privatemember)
+       4. [Public Member](#publicmember)
+       5. [Private Methods](#privatemethods)
+       6. [Public Methods](#publicmethods)
+    2. [Examples](#examples)
+        1. [Read and Write](#readwrite)
+        2. [Create](#create)
+---
 ## Motiviaton
 This project was highly inspired from the C#
 [ini-parser](https://github.com/rickyah/ini-parser) by rickyah.
 
+
+---
 ## Documentation
+---
 
 ### Namespace
 ini 
 
 ### Typedefs
-| Name | Description |
+| Type | Description |
 |------|-------------|
-| inimap | Typedef for std::map\<std::string,
-    std::map\<std::string, std::string\>\> |
+| inimap | Typedef for std::map\<std::string, std::map\<std::string, std::string\>\> |
 
 ### class IniParser
 #### Constructors
-| Name | Description | Arguments |
-|------|-------------|-----------|
+| Signature | Description |
+|-----------|-------------|
 | IniParser() | Creates new instance of IniParser |
-| IniParser(std::string file\_path) | Creates new instance and reads file 
-content |
-| IniParser(std::string file, inimap& data) | Creates new instance, reads file 
-and parse data to inimap by reference |
+| IniParser(std::string file\_path) | Creates new instance and reads file  content |
+| IniParser(std::string file, inimap& data) | Creates new instance, reads file and parse data to inimap by reference |
 
 #### Destructor 
 | Name | Description 
 | ~IniParser() | clears all private container
 
 #### Private Member
-| Name | Type | Description |
-|------|------|-------------|
-| \_lines | std::vector\<std::string\> | Stores all lines by reading 
-file/string data |
+| Signature | Type | Description |
+|-----------|------|-------------|
+| \_lines | std::vector\<std::string\> | Stores all lines by reading file/string data |
 | \_values | ini::inimap | Stores \_line values to std::map during parsing |
-| \_keyValueDelim | std::string | Stores default key value delimiter of ini file
-(default "=") |
-| \_lineSeparator | std::string | Stores default separator for ini data,
-default is newline ("\n") |
+| \_keyValueDelim | std::string | Stores default key value delimiter of ini file (default "=") |
+| \_lineSeparator | std::string | Stores default separator for ini data, default is newline ("\n") |
 
 #### Private Methods
-| Name | Return Value | Description |
-|------|--------------|-------------|
-| split(std::string delimiter) | std::vector\<std::string\> | Splits a string 
-into parts |
+| Signature | Return Value | Description |
+|-----------|--------------|-------------|
+| split(std::string delimiter) | std::vector\<std::string\> | Splits a string into parts |
 
 
 #### Public Methods
-| Name | Return Value | Description |
-|------|--------------|-------------|
+| Signature | Return Value | Description |
+|-----------|--------------|-------------|
 | parse() | ini::inimap | Parses data which was red before
-| parseFile(std::string file\_path) | ini::inimap | read file if exists and 
-parses data |
+| parseFile(std::string file\_path) | ini::inimap | read file if exists and parses data |
 | parseData(std::string data) | ini::inimap | read string data and parse |
-| readFile(std::string file\_path) | bool | reads file and store values 
-internal, if successful returns true |
-| readData(std::string data) | bool | reads string and store values internal, 
-if successful returns
-true |
+| readFile(std::string file\_path) | bool | reads file and store values internal, if successful returns true |
+| readData(std::string data) | bool | reads string and store values internal, if successful returns true |
 | writeFile(std::string file\_path) | bool | writes data into file 
 | writeData(std::string file\_path) | bool | writes data into std::string
 
@@ -131,12 +139,13 @@ counter=20
 exe=/home/test/bin
 ```
 
-### Create new INI file
+### Create new ini file
 ```cpp
 #include "iniparser.h"
 using IniParser = ini::IniParser;
 // ...
 
+IniParser ipa;
 ini::inimap ini_data;
 
 ini_data[""]["example"] = "hello";
@@ -144,8 +153,10 @@ ini_data["Settings"]["path"] = "/home/usr/dir";
 ini_data["Settings"]["bin"] = "/home/usr/dir/bin";
 ini_data["Counter"]["read"] = "10";
 ini_data["Counter"]["write"] = "5";
+
+ipa.WriteFile("test.ini");
 ```
-Output:
+Output (test.ini):
 ```ini
 example=hello 
 
