@@ -9,16 +9,16 @@ configuration files with help of std::map
 2. [Documentation](#documentation)
     1. [Namespace](#namespace)
     2. [Typedefs](#typedefs)
-    3. [Class Iniparser](#IniParser)
-       1. [Constructors](#constructor)
+    3. [Class IniParser](#class)
+       1. [Constructors](#constructors)
        2. [Destructor](#desturctor)
        3. [Private Member](#privatemember)
-       4. [Public Member](#publicmember)
-       5. [Private Methods](#privatemethods)
-       6. [Public Methods](#publicmethods)
-    2. [Examples](#examples)
-        1. [Read and Write](#readwrite)
-        2. [Create](#create)
+       4. [Private Methods](#privatemethods)
+       5. [Public Methods](#publicmethods)
+3. [Examples](#examples)
+    1. [Read and Write](#readwrite)
+    2. [Create](#create)
+4. [License](#licence)
 ---
 ## Motiviaton
 This project was highly inspired from the C#
@@ -30,13 +30,14 @@ This project was highly inspired from the C#
 ---
 
 ### Namespace
-ini 
+__ini __
 
 ### Typedefs
 | Type | Description |
 |------|-------------|
 | inimap | Typedef for std::map\<std::string, std::map\<std::string, std::string\>\> |
 
+<a href="#class"></a>
 ### class IniParser
 #### Constructors
 | Signature | Description |
@@ -49,6 +50,7 @@ ini
 | Name | Description 
 | ~IniParser() | clears all private container
 
+<a href="#privatemember"></a>
 #### Private Member
 | Signature | Type | Description |
 |-----------|------|-------------|
@@ -57,12 +59,13 @@ ini
 | \_keyValueDelim | std::string | Stores default key value delimiter of ini file (default "=") |
 | \_lineSeparator | std::string | Stores default separator for ini data, default is newline ("\n") |
 
+<a href="#privatemethods"></a>
 #### Private Methods
 | Signature | Return Value | Description |
 |-----------|--------------|-------------|
 | split(std::string delimiter) | std::vector\<std::string\> | Splits a string into parts |
 
-
+<a href="#publicmethods"></a>
 #### Public Methods
 | Signature | Return Value | Description |
 |-----------|--------------|-------------|
@@ -75,8 +78,8 @@ ini
 | writeData(std::string file\_path) | bool | writes data into std::string
 
 
-## Example
-
+## Examples
+<a href="#readwrite"></a>
 ### Read and write INI file
 ```ini
 # comment
@@ -138,7 +141,7 @@ counter=20
 [Test]
 exe=/home/test/bin
 ```
-
+<a href="#create"></a>
 ### Create new ini file
 ```cpp
 #include "iniparser.h"
@@ -171,4 +174,4 @@ write=5
 ```
 
 ## License
-MIT
+__MIT__
