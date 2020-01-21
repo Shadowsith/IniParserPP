@@ -1,5 +1,5 @@
 [![Build status](https://ci.appveyor.com/api/projects/status/v7y5q5a0q45w1ib7?svg=true)](https://ci.appveyor.com/project/Shadowsith/iniparserpp)
-# IniParser
+# IniParser++
 A small, modern C++11 header-only library for read, write and modify .INI 
 configuration files with help of std::map
 
@@ -73,7 +73,7 @@ This project was highly inspired from the C#
 #### Private Methods
 | Signature | Return Value | Description |
 |-----------|--------------|-------------|
-| split(std::string delimiter) | std::vector\<std::string\> | Splits a string into parts |
+| \_split(std::string delimiter) | std::vector\<std::string\> | Splits a string into parts |
 
 <a id="publicmethods"></a>
 #### Public Methods
@@ -81,11 +81,11 @@ This project was highly inspired from the C#
 |-----------|--------------|-------------|
 | parse() | ini::inimap | Parses data which was red before
 | parseFile(std::string file\_path) | ini::inimap | read file if exists and parses data |
-| parseData(std::string data) | ini::inimap | read string data and parse |
+| parseString(std::string& data) | ini::inimap | read string and parse |
 | readFile(std::string file\_path) | bool | reads file and store values internal, if successful returns true |
-| readData(std::string data) | bool | reads string and store values internal, if successful returns true |
+| readString(std::string data) | bool | reads string and store values internal, if successful returns true |
 | writeFile(std::string file\_path) | bool | writes data into file 
-| writeData(std::string file\_path) | bool | writes data into std::string
+| writeString(std::string file\_path) | bool | writes data into std::string
 
 <a id="configuration"></a>
 #### Setters (Configuration)
