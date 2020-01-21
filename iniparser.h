@@ -56,7 +56,7 @@ typedef std::vector<string> vecstr;
         for(string line : _lines) {
             //ignoring ini comments at begin of line
             if(line[0] != ' ' && line != "") {
-                if(line[0] == '[') {
+                if(line[0] == _sectionOpen) {
                     // remove [] chars
                     head = line.substr(1, line.length()-2);
                 } else {
@@ -86,7 +86,7 @@ typedef std::vector<string> vecstr;
                     if(m1.first != data.begin()->first) {
                         file << _lineSeparator; 
                     }
-                    file << '[' << m1.first << ']' << _lineSeparator;
+                    file << _sectionOpen << m1.first << _sectionClose << _lineSeparator;
                 }
                 for(auto const& m2 : m1.second) {
                     if(_comments && (m2.first[0] == _commentSign || m2.first.find(_commentSign)
@@ -149,7 +149,7 @@ typedef std::vector<string> vecstr;
                     if(m1.first != data.begin()->first) {
                         str += _lineSeparator; 
                     }
-                    str += '[' + m1.first + ']' + _lineSeparator;
+                    str += _sectionOpen + m1.first + _sectionClose + _lineSeparator;
                 }
                 for(auto const& m2 : m1.second) {
                    str += m2.first + _keyValueDelim + m2.second + 
@@ -228,6 +228,27 @@ typedef std::vector<string> vecstr;
         return _comments;
     }
 
+    void setSectionTags(char open, char close) {
+        _sectionOpen = open;
+        _sectionClose = close;
+    }
+
+    void setSectionOpen(char open) {
+        _sectionOpen = open;
+    }
+
+    void setSectionClose(char close) {
+        _sectionClose = close;
+    }
+
+    char getSectionOpen() {
+        return _sectionOpen;
+    }
+
+    char getSectionClose() {
+        return _sectionClose;
+    }
+
     private:
     vecstr _lines;
     inimap _values;
@@ -235,6 +256,8 @@ typedef std::vector<string> vecstr;
     string _lineSeparator = "\n";
     char _commentSign = ';';
     bool _comments = false;
+    char _sectionOpen = '[';
+    char _sectionClose = ']';
 
     vecstr _split(string& str, const string delim) {
         vecstr parts;

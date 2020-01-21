@@ -87,7 +87,7 @@ TEST_CASE("Ini other standard", "[read/write non standard]") {
 
 void add_cat_values(int i, ini::inimap& data) {
     for(int j = 0; j < 1000; j++) {
-        data[std::to_string(i)][std::to_string(j)] = std::to_string(i+j); 
+        data["g" + std::to_string(i)][std::to_string(j)] = std::to_string(i+j); 
     }
 }
 
@@ -106,7 +106,7 @@ TEST_CASE("Ini performance write/read", "[performance]") {
     p.writeFile("performance.ini", data);
     REQUIRE(p.readFile("performance.ini"));
     auto x = p.parse();
-    REQUIRE(x["20"]["30"] != "");
+    REQUIRE(x["g20"]["30"] != "");
     std::remove("performance.ini");
 }
 
@@ -166,4 +166,16 @@ TEST_CASE("Write ini with comments", "Add comments") {
     REQUIRE(data["Test"]["#0"] == "# hello");
     REQUIRE(data["Blub"]["#0"] == "# noot noot");
     std::remove("add_comments.ini");
+}
+
+// TODO ensure that comment sign is changed before writing back data
+TEST_CASE("Rewrite ini style", "rewrite") {
+    IniParser p;
+    ini::inimap data = p.parseFile("test.ini");
+    p.setKeyValueDelimiter("~");
+    p.setSectionTags('{', '}');
+    p.writeFile("rewrite.ini", data);
+    data = p.parseFile("rewrite.ini");
+    REQUIRE(data["Test"]["foo"] == "bar");
+    std::remove("rewrite.ini");
 }
