@@ -27,7 +27,7 @@ typedef std::vector<string> vecstr;
         _values.clear(); 
     }
 
-    inimap parseString(string str) {
+    inimap parseString(string& str) {
         if(readString(str)) {
             return parse();
         } else {
@@ -162,7 +162,7 @@ typedef std::vector<string> vecstr;
         }
     }
 
-    bool readString(string str) {
+    bool readString(string& str) {
         try {
             _lines.clear();
             string line;
