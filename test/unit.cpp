@@ -132,7 +132,7 @@ TEST_CASE("Comments read/write", "Comments") {
             break;
         }
     }
-    REQUIRE(line == "# comment");
+    REQUIRE(line == "; comment");
 }
 
 TEST_CASE("No comments read/write", "Not allow comments") {
@@ -148,6 +148,22 @@ TEST_CASE("No comments read/write", "Not allow comments") {
             break;
         }
     }
-    REQUIRE(line != "# comment");
+    REQUIRE(line != "; comment");
     std::remove("test_no_comment.ini");
+}
+
+TEST_CASE("Write ini with comments", "Add comments") {
+    IniParser p;
+    p.setAllowComments(true);
+    p.setCommentSign('#');
+    ini::inimap data;
+    data["Test"]["#1"] = "# hello";
+    data["Test"]["active"] = "0";
+    data["Blub"]["blob"] = "moep";
+    data["Blub"]["#1"] = "# noot noot";
+    p.writeFile("add_comments.ini", data);
+    data = p.parseFile("add_comments.ini");
+    REQUIRE(data["Test"]["#0"] == "# hello");
+    REQUIRE(data["Blub"]["#0"] == "# noot noot");
+    std::remove("add_comments.ini");
 }

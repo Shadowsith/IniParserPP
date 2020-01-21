@@ -60,6 +60,7 @@ typedef std::vector<string> vecstr;
     inimap parse() {
         _values.clear();
         string head = "";
+        string headBefore = "";
         vecstr vec;
         int i = 0;
         for(string line : _lines) {
@@ -74,9 +75,11 @@ typedef std::vector<string> vecstr;
                         if(vec[0] != "" && vec[1] != "") {
                             _values[head][vec[0]] = vec[1];
                         }
-                    } else if(_comments && 
-                            (line[0] == ';' || line[0] == '#')) {
-                        _values[head]["#" + std::to_string(i)] = line;
+                    } else if(_comments && line[0] == _commentSign) {
+                        if(i != 0 && head != headBefore)
+                            i = 0;
+                        _values[head][_commentSign + std::to_string(i)] = line;
+                        headBefore = head;
                         i++;
                     }
                 }
@@ -96,8 +99,8 @@ typedef std::vector<string> vecstr;
                     file << '[' << m1.first << ']' << _lineSeparator;
                 }
                 for(auto const& m2 : m1.second) {
-                    if(m2.first[0] == '#' || m2.first.find("#") 
-                            != string::npos) {
+                    if(_comments && (m2.first[0] == _commentSign || m2.first.find(_commentSign)
+                            != string::npos)) {
                         file << m2.second << _lineSeparator;
                     } else {
                         file << m2.first << _keyValueDelim << m2.second
@@ -222,8 +225,16 @@ typedef std::vector<string> vecstr;
         _lineSeparator = str;
     }
 
-    string getLineSeparator(string str) {
+    string getLineSeparator() {
         return _lineSeparator;
+    }
+
+    void setCommentSign(char c) {
+        _commentSign = c;
+    }
+
+    char getCommentSign() {
+        return _commentSign;
     }
 
     void setAllowComments(bool b) {
@@ -239,6 +250,7 @@ typedef std::vector<string> vecstr;
     inimap _values;
     string _keyValueDelim = "=";
     string _lineSeparator = "\n";
+    char _commentSign = ';';
     bool _comments = false;
 
     vecstr _split(string& str, const string delim) {
