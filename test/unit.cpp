@@ -69,7 +69,7 @@ TEST_CASE("Ini read/write string", "[read/write string]") {
         REQUIRE(data["Settings"]["volume"] == "120");
         data["Settings"]["volume"] = "90";
         parser.setKeyValueDelimiter(" : ");
-        string wback = parser.writeData(data);
+        string wback = parser.writeString(data);
         data = parser.parseString(wback);
         REQUIRE(data["Settings"]["volume"] == "90");
     } catch(exception ex) {

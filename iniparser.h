@@ -141,7 +141,7 @@ typedef std::vector<string> vecstr;
     }
     */
 
-    string writeData(inimap& data) {
+    string writeString(inimap& data) {
         try {
             std::string str = "";
             for(auto const& m1 : data) {
