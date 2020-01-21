@@ -47,16 +47,6 @@ typedef std::vector<string> vecstr;
         }
     }
 
-    inimap parseData(string& data) {
-        if(readData(data)) {
-            return parse();
-        } else {
-            auto val = _values;
-            val.clear();
-            return val;
-        }
-    }
-
     inimap parse() {
         _values.clear();
         string head = "";
@@ -117,6 +107,7 @@ typedef std::vector<string> vecstr;
         return false;
     }
 
+    /*
     bool writeLine(string file_path, string section, string key, string value) {
         vecstr lines;
         std::fstream file;
@@ -148,6 +139,7 @@ typedef std::vector<string> vecstr;
         }
         return true;
     }
+    */
 
     string writeData(inimap& data) {
         try {
@@ -202,15 +194,6 @@ typedef std::vector<string> vecstr;
             throw;
         }
         return false;
-    }
-
-    bool readData(string& data, string delimiter = "\n") {
-        _lines.clear();
-        vecstr vec = _split(data, delimiter);
-        for(string str : vec) {
-            _lines.push_back(str);
-        }
-        return true;
     }
 
     void setKeyValueDelimiter(string str) {

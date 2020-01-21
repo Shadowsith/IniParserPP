@@ -50,7 +50,7 @@ TEST_CASE("Ini writeFile", "[writeFile]") {
     }
 }
 
-TEST_CASE("Ini read/write data", "[read/write data]") {
+TEST_CASE("Ini read/write string", "[read/write string]") {
     string inistr1 = "";
     inistr1 += "exe=/home/test/bin/\n\n";
     inistr1 += ";comment\n";
@@ -64,13 +64,13 @@ TEST_CASE("Ini read/write data", "[read/write data]") {
 
     try {
         IniParser parser;
-        REQUIRE(parser.readData(inistr1));
+        REQUIRE(parser.readString(inistr1));
         auto data = parser.parse();
         REQUIRE(data["Settings"]["volume"] == "120");
         data["Settings"]["volume"] = "90";
         parser.setKeyValueDelimiter(" : ");
         string wback = parser.writeData(data);
-        data = parser.parseData(wback);
+        data = parser.parseString(wback);
         REQUIRE(data["Settings"]["volume"] == "90");
     } catch(exception ex) {
         REQUIRE(false);
