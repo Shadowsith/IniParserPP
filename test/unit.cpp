@@ -117,3 +117,37 @@ TEST_CASE("Ini other line separator", "[line separator]") {
     ini::inimap data = p.parseString(ini_data);
     REQUIRE(data["Test"]["config"] == "f1");
 }
+
+TEST_CASE("Comments read/write", "Comments") {
+    IniParser p;
+    p.setAllowComments(true);
+    ini::inimap data = p.parseFile("test.ini");
+    p.writeFile("test.ini", data);
+    std::ifstream file;
+    string line;
+    file.open("test.ini");
+    if(file.good()) {
+        while(!file.eof()) {
+            std::getline(file, line);
+            break;
+        }
+    }
+    REQUIRE(line == "# comment");
+}
+
+TEST_CASE("No comments read/write", "Not allow comments") {
+    IniParser p;
+    ini::inimap data = p.parseFile("test.ini");
+    p.writeFile("test_no_comment.ini", data);
+    std::ifstream file;
+    string line;
+    file.open("test_no_comment.ini");
+    if(file.good()) {
+        while(!file.eof()) {
+            std::getline(file, line);
+            break;
+        }
+    }
+    REQUIRE(line != "# comment");
+    std::remove("test_no_comment.ini");
+}

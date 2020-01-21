@@ -74,7 +74,7 @@ typedef std::vector<string> vecstr;
                         if(vec[0] != "" && vec[1] != "") {
                             _values[head][vec[0]] = vec[1];
                         }
-                    } else if(allowComments && 
+                    } else if(_comments && 
                             (line[0] == ';' || line[0] == '#')) {
                         _values[head]["#" + std::to_string(i)] = line;
                         i++;
@@ -226,13 +226,20 @@ typedef std::vector<string> vecstr;
         return _lineSeparator;
     }
 
-    bool allowComments = false;
+    void setAllowComments(bool b) {
+        _comments = b;
+    }
+
+    bool getAllowComments() {
+        return _comments;
+    }
 
     private:
     vecstr _lines;
     inimap _values;
     string _keyValueDelim = "=";
     string _lineSeparator = "\n";
+    bool _comments = false;
 
     vecstr _split(string& str, const string delim) {
         vecstr parts;
