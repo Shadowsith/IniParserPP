@@ -68,6 +68,9 @@ This project was highly inspired from the C#
 | \_values | ini::inimap | Stores \_line values to std::map during parsing |
 | \_keyValueDelim | std::string | Stores default key value delimiter of ini file (default "=") |
 | \_lineSeparator | std::string | Stores default separator for ini data, default is newline ("\n") |
+| \_comments | bool | used for that parser knows if it needs to handle comments (read/write) |
+| \_commentSign | char | Line prefix for comment lines in ini file |
+
 
 <a id="privatemethods"></a>
 #### Private Methods
@@ -93,10 +96,10 @@ Because INI files are not standardized there are different configuration setters
 
 | Signature | Return Value/Type | Description |
 |-----------|-------------------|-------------|
-| setKeyValueDelimiter(std::string delimiter) | void | Set the delimiter between keys and values (default is "=")
+| setKeyValueDelimiter(std::string delimiter) | void | Set the delimiter between keys and values (default is "=" )
 | setLineSeparator(std::string seperator) | void | Set the seperator for the ini lines
 | setAllowComments(bool b) | void | Set if comments are saved in the inimap data (default false)
-| setCommentSign(char c) | void | set which sign is used for comments in the INI file
+| setCommentSign(char c) | void | set which sign is used for comments in the INI file (default is ';' )
 
 ---
 <a id="examples"></a>
@@ -179,7 +182,7 @@ ini_data["Settings"]["bin"] = "/home/usr/dir/bin";
 ini_data["Counter"]["read"] = "10";
 ini_data["Counter"]["write"] = "5";
 
-ipa.WriteFile("test.ini");
+ipa.WriteFile("test.ini", ini_data);
 ```
 Output (test.ini):
 ```ini
@@ -193,6 +196,47 @@ bin=/home/usr/dir/bin
 read=10
 write=5
 ```
+<a id="comments"></a>
+### Hanlde comments
+Two kinds of comments are supported:
+* On top of the file
+* On top of the each section
+
+Attribute specific comments are unfortunately not supported.
+
+Ini file (comments.ini)
+```ini
+# this is a example to read and write comments
+# some additional information
+
+[Settings]
+# here are the settings
+path=/home/usr/dir
+```
+```cpp
+IniParser p;
+p.setAllowComments(true);
+p.setCommentSign('#');
+ini::inimap data = p.parseFile("commments.ini");
+// please remember that the prefix (#) depends to the set commment sign
+data[""]["#0"]; // --> # this is a example to read and write comments
+data[""]["#1"]; // --> # some additional information
+data["Settings"]["#0"]; // --> here are the settings
+data["Settings"]["#1"] = "# a new comment";
+p.writeFile("comments.ini", data);
+```
+Output:
+```ini
+# this is a example to read and write comments
+# some additional information
+
+[Settings]
+# here are the settings
+# a new comment
+path=/home/usr/dir
+```
+
+More examples are in the unit tests under test/unit.cpp
 ---
 <a id="unit"></a>
 ## Unit Tests
