@@ -70,7 +70,6 @@ TEST_CASE("Ini read/write data", "[read/write data]") {
         std::string wback = parser.writeData(data);
         data = parser.parseData(wback);
         REQUIRE(data["Settings"]["volume"] == "90");
-        std::cout << wback << std::endl;
     } catch(std::exception ex) {
         REQUIRE(false);
     }
@@ -108,5 +107,3 @@ TEST_CASE("Ini performance write/read", "[performance]") {
     REQUIRE(x["20"]["30"] != "");
     std::remove("performance.ini");
 }
-
-

@@ -1,6 +1,7 @@
 #include <fstream>
 #include <map>
 #include <vector>
+#include <iostream>
 
 namespace ini {
 
@@ -50,18 +51,23 @@ typedef std::vector<string> vecstr;
         _values.clear();
         string head = "";
         vecstr vec;
+        int i = 0;
         for(string line : _lines) {
             //ignoring ini comments at begin of line
-            if(line[0] != '#' && line[0] != ';' && line[0] != ' ') {
+            if(line[0] != ' ' && line != "") {
                 if(line[0] == '[') {
                     // remove [] chars
                     head = line.substr(1, line.length()-2);
                 } else {
-                    if(line.find("=") > 0 && line != "") {
-                        vec = this->_split(line, _keyValueDelim);
+                    if(line.find(_keyValueDelim) != string::npos && line != "") {
+                        vec = _split(line, _keyValueDelim);
                         if(vec[0] != "" && vec[1] != "") {
                             _values[head][vec[0]] = vec[1];
                         }
+                    } else if(allowComments && 
+                            (line[0] == ';' || line[0] == '#')) {
+                        _values[head]["#" + std::to_string(i)] = line;
+                        i++;
                     }
                 }
             }
@@ -80,8 +86,13 @@ typedef std::vector<string> vecstr;
                     file << '[' << m1.first << ']' << _lineSeparator;
                 }
                 for(auto const& m2 : m1.second) {
-                   file << m2.first << _keyValueDelim << m2.second
-                       << _lineSeparator;
+                    if(m2.first[0] == '#' || m2.first.find("#") 
+                            != string::npos) {
+                        file << m2.second << _lineSeparator;
+                    } else {
+                        file << m2.first << _keyValueDelim << m2.second
+                            << _lineSeparator;
+                    }
                 }
             }
             file.close();
@@ -91,6 +102,38 @@ typedef std::vector<string> vecstr;
             throw;
         }
         return false;
+    }
+
+    bool writeLine(string file_path, string section, string key, string value) {
+        vecstr lines;
+        std::fstream file;
+        bool isSection = false;
+        try {
+            file.open(file_path);
+            if(file.good()) {
+                for(string line; getline(file, line);) {
+                    lines.push_back(line);
+                }
+                file.close();
+            } else {
+                file.close();
+                return false;
+            }
+            for(string l : lines) {
+                if(l.find("[" + section + "]") != string::npos && 
+                    !isSection) {
+                   isSection = true; 
+                   continue;
+                }
+                if(l.find("[") != string::npos && isSection) {
+                    return false;
+                }
+            }
+        } catch(std::exception) {
+            file.close();
+            return false;
+        }
+        return true;
     }
 
     string writeData(inimap& data) {
@@ -161,6 +204,8 @@ typedef std::vector<string> vecstr;
     string getLineSeparator(string str) {
         return _lineSeparator;
     }
+
+    bool allowComments = false;
 
     private:
     vecstr _lines;
