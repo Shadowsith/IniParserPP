@@ -4,6 +4,8 @@
 #include <map>
 #include <thread>
 #include <cstdio>
+using string = std::string;
+using exception = std::exception;
 using IniParser = ini::IniParser;
 
 IniParser ipa;
@@ -14,7 +16,7 @@ TEST_CASE("Ini readFile", "[readFile]") {
         REQUIRE(ipa.readFile("test.ini"));
         // check non exist
         REQUIRE(!ipa.readFile("abcdef.ini"));
-    } catch(std::exception ex) {
+    } catch(exception ex) {
         REQUIRE(false);
     }
 }
@@ -28,7 +30,7 @@ TEST_CASE("Ini parse", "[parse]") {
         auto rdata = ipa.parseFile("root.ini"); 
         REQUIRE(rdata.size() > 1);
         REQUIRE(rdata["Temp"]["Mask"] == "*.log");
-    } catch(std::exception ex) {
+    } catch(exception ex) {
         REQUIRE(false);
     }
 }
@@ -43,13 +45,13 @@ TEST_CASE("Ini writeFile", "[writeFile]") {
         auto ndata = ipa.parse();
         REQUIRE(ndata["Settings"]["lang"] == "de_DE");
         REQUIRE(ndata["New"]["counter"] == "20");
-    } catch(std::exception ex) {
+    } catch(exception ex) {
         REQUIRE(false);
     }
 }
 
 TEST_CASE("Ini read/write data", "[read/write data]") {
-    std::string inistr1 = "";
+    string inistr1 = "";
     inistr1 += "exe=/home/test/bin/\n\n";
     inistr1 += ";comment\n";
     inistr1 += "#comment\n";
@@ -67,10 +69,10 @@ TEST_CASE("Ini read/write data", "[read/write data]") {
         REQUIRE(data["Settings"]["volume"] == "120");
         data["Settings"]["volume"] = "90";
         parser.setKeyValueDelimiter(" : ");
-        std::string wback = parser.writeData(data);
+        string wback = parser.writeData(data);
         data = parser.parseData(wback);
         REQUIRE(data["Settings"]["volume"] == "90");
-    } catch(std::exception ex) {
+    } catch(exception ex) {
         REQUIRE(false);
     }
 }
@@ -106,4 +108,12 @@ TEST_CASE("Ini performance write/read", "[performance]") {
     auto x = p.parse();
     REQUIRE(x["20"]["30"] != "");
     std::remove("performance.ini");
+}
+
+TEST_CASE("Ini other line separator", "[line separator]") {
+    string ini_data = "[Test]~config=f1~active=0";
+    IniParser p;
+    p.setLineSeparator("~");
+    ini::inimap data = p.parseString(ini_data);
+    REQUIRE(data["Test"]["config"] == "f1");
 }

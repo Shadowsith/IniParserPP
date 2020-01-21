@@ -27,10 +27,20 @@ typedef std::vector<string> vecstr;
         _values.clear(); 
     }
 
-    inimap parseFile(string file) {
-        if(readFile(file))
+    inimap parseString(string str) {
+        if(readString(str)) {
             return parse();
-        else {
+        } else {
+            auto val = _values;
+            val.clear();
+            return val;
+        }
+    }
+
+    inimap parseFile(string file) {
+        if(readFile(file)) {
+            return parse();
+        } else {
             auto val = _values;
             val.clear();
             return val;
@@ -155,6 +165,17 @@ typedef std::vector<string> vecstr;
         } catch(std::exception ex) {
             throw;
         }
+    }
+
+    bool readString(string str) {
+        try {
+            _lines.clear();
+            string line;
+            _lines = _split(str, _lineSeparator);
+        } catch(std::exception ex) {
+            return false;
+        }
+        return true;
     }
 
     bool readFile(string file) {
