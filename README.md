@@ -19,6 +19,7 @@ configuration files with help of std::map
 3. [Examples](#examples)
     1. [Read and Write](#readwrite)
     2. [Create](#create)
+    2. [Handle comments](#comments)
 5. [Unit Tests](#unit)
 4. [License](#license)
 ---
