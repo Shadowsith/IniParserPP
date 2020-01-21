@@ -82,7 +82,19 @@ This project was highly inspired from the C#
 | writeFile(std::string file\_path) | bool | writes data into file 
 | writeData(std::string file\_path) | bool | writes data into std::string
 
+<a href="configuration"></a>
+#### Setters (Configuration)
+Because INI files are not standardized there are different configuration setters which you can adjust.
+
+| Signature | Return Value/Type | Description |
+|-----------|-------------------|-------------|
+| setKeyValueDelimiter(std::string delimiter) | void | Set the delimiter between keys and values (default is "=")
+| setLineSeparator(std::string seperator) | void | Set the seperator for the ini lines
+| allowComments | bool | Public member which allows comments in the ini file (default false)
+
+
 ---
+<a href="#examples"></a>
 ## Examples
 <a href="#readwrite"></a>
 ### Read and write .ini file
