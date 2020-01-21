@@ -9,7 +9,7 @@ configuration files with help of std::map
 2. [Documentation](#documentation)
     1. [Namespace](#namespace)
     2. [Typedefs](#typedefs)
-    3. [Class](#class)
+    3. [Class](#class)       
        1. [Constructors](#constructors)
        2. [Destructor](#desturctor)
        3. [Private Member](#privatemember)
@@ -41,7 +41,7 @@ This project was highly inspired from the C#
 
 ---
 
-<a href="#class"></a>
+<a id="class"></a>
 ### Class IniParser
 #### Constructors
 | Signature | Description |
