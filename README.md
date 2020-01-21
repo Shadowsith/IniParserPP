@@ -95,8 +95,8 @@ Because INI files are not standardized there are different configuration setters
 |-----------|-------------------|-------------|
 | setKeyValueDelimiter(std::string delimiter) | void | Set the delimiter between keys and values (default is "=")
 | setLineSeparator(std::string seperator) | void | Set the seperator for the ini lines
-| allowComments | bool | Public member which allows comments in the ini file (default false)
-
+| setAllowComments(bool b) | void | Set if comments are saved in the inimap data (default false)
+| setCommentSign(char c) | void | set which sign is used for comments in the INI file
 
 ---
 <a id="examples"></a>
