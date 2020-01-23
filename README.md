@@ -5,23 +5,28 @@ configuration files with help of std::map
 
 ----
 ## Content
-1. [Motiviaton](#motiviaton)
-2. [Documentation](#documentation)
-    1. [Namespace](#namespace)
-    2. [Typedefs](#typedefs)
-    3. [Class](#class)       
-       1. [Constructors](#constructors)
-       2. [Destructor](#destructor)
-       3. [Private Member](#privatemember)
-       4. [Private Methods](#privatemethods)
-       5. [Public Methods](#publicmethods)
-       6. [Setters (Configuration)](#configuration)
-3. [Examples](#examples)
-    1. [Read and Write](#readwrite)
-    2. [Create](#create)
-    2. [Handle comments](#comments)
-5. [Unit Tests](#unit)
-4. [License](#license)
+- [IniParser++](#iniparser)
+  - [Content](#content)
+  - [- License](#ul-lilicenseli-ul)
+  - [Motiviaton](#motiviaton)
+  - [## Documentation](#h2-id%22documentation-126%22documentationh2)
+    - [Namespace](#namespace)
+    - [Typedefs](#typedefs)
+  - [| inimap | Typedef for std::map\<std::string, std::map\<std::string, std::string\>\> |](#inimap--typedef-for-stdmapstdstring-stdmapstdstring-stdstring)
+    - [Class IniParser](#class-iniparser)
+      - [Constructors](#constructors)
+      - [Destructor](#destructor)
+      - [Private Member](#private-member)
+      - [Private Methods](#private-methods)
+      - [Public Methods](#public-methods)
+      - [Setters (Configuration)](#setters-configuration)
+  - [Examples](#examples)
+    - [Read and write .ini file](#read-and-write-ini-file)
+    - [Create new .ini file](#create-new-ini-file)
+    - [Hanlde comments](#hanlde-comments)
+  - [More examples are in the unit tests under test/unit.cpp](#more-examples-are-in-the-unit-tests-under-testunitcpp)
+  - [Unit Tests](#unit-tests)
+  - [License](#license)
 ---
 <a id="motiviation"></a>
 ## Motiviaton
@@ -97,10 +102,13 @@ Because INI files are not standardized there are different configuration setters
 
 | Signature | Return Value/Type | Description |
 |-----------|-------------------|-------------|
-| setKeyValueDelimiter(std::string delimiter) | void | Set the delimiter between keys and values (default is "=" )
-| setLineSeparator(std::string seperator) | void | Set the seperator for the ini lines
-| setAllowComments(bool b) | void | Set if comments are saved in the inimap data (default false)
-| setCommentSign(char c) | void | set which sign is used for comments in the INI file (default is ';' )
+| setKeyValueDelimiter(std::string delimiter) | void | Set the delimiter between keys and values (default is "=" ) |
+| setLineSeparator(std::string seperator) | void | Set the seperator for the ini lines |
+| setAllowComments(bool b) | void | Set if comments are saved in the inimap data (default false) |
+| setCommentSign(char c) | void | Set which sign is used for comments in the INI file (default is ';' ) |
+| setSectionOpen(char c) | void | Set which opening sign is used for a INI section |
+| setSectionClose(char c) | void | Set which closing sign is used for a INI section |
+| setSectionTag(char c1, char c2) | void | Set opening and closing tag for a INI section |
 
 ---
 <a id="examples"></a>
